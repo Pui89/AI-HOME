@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: Apache-2.0
 """Dependency-free tests for the opt-in PUI89 AI HOME model adapter.
 
 These tests validate adapter guardrails and import behaviour only. They do not
