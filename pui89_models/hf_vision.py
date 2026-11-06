@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: Apache-2.0
 """Opt-in local Hugging Face vision adapters for PUI89 projects.
 
 No model is downloaded at import time. By default, loaders only use model files
