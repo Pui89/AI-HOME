@@ -1,0 +1,34 @@
+name: PUI89 AI HOME Dependency-Free Contract Smoke
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "pui89_models/**"
+      - "tests/test_hf_vision_adapter.py"
+      - ".github/workflows/pui89-home-contract-smoke.yml"
+  pull_request:
+    paths:
+      - "pui89_models/**"
+      - "tests/test_hf_vision_adapter.py"
+      - ".github/workflows/pui89-home-contract-smoke.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: pui89-home-contract-smoke-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  adapter-contract:
+    runs-on: ubuntu-slim
+    timeout-minutes: 3
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Run dependency-free adapter contract tests
+        run: python -m unittest discover -s tests -p "test_hf_vision_adapter.py" -v
