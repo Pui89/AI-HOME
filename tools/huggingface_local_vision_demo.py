@@ -6,7 +6,7 @@ from pathlib import Path
 from typing import Any
 
 MODEL_ID = "google/owlvit-base-patch32"
-MODEL_REVISION = "main"
+MODEL_REVISION = "cbc355fb364588351c5d51c7f74465e8e7ec6f72"
 PROJECT = "AI-HOME"
 DEFAULT_LABELS = ["visible flame","smoke","water leak","crack in wall","mold patch","electrical outlet","person","animal"]
 TASK_SCOPE = "Visual home-condition cues for human review only; a missing detection does not prove a hazard is absent."
