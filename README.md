@@ -1,4 +1,4 @@
-# PUI89 AI HOME — Intelligent Home Assistant Robot
+# PUI89 AI HOME — AI Home Assistant Robot
 ### An Indoor Mobile Assistant for Home Safety, Monitoring and Everyday Support
 
 **A calmer, more understandable view of home conditions.**
@@ -6,6 +6,7 @@
 PUI89 AI HOME is a dedicated indoor mobile assistant concept focused on home safety, environmental monitoring and everyday support. It uses a compact four-wheel design and remains a separate product from PUI89 AI NOMAD, which is intended for indoor and outdoor mobility, travel and carrying assistance.
 
 - **Project:** PUI89 AI HOME
+- **Product type:** AI Home Assistant Robot
 - **Repository:** https://github.com/Pui89/AI-HOME
 - **Website:** [English](https://pui89.github.io/home.html) · [ภาษาไทย](https://pui89.github.io/home-th.html)
 - **Related but independent product:** [PUI89 AI NOMAD](https://github.com/Pui89/AI-NOMAD)
