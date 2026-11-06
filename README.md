@@ -1,16 +1,16 @@
-# HOMEGUARD AI HOME
-### Indoor Home-Safety Intelligence Robot
+# PUI89 AI HOME — Intelligent Home Assistant Robot
+### An Indoor Mobile Assistant for Home Safety, Monitoring and Everyday Support
 
 **A calmer, more understandable view of home conditions.**
 
-HOME is PUI89's dedicated indoor home-safety intelligence project. It is a separate product and repository from HOMEGUARD AI NOMAD, which is the outdoor quadruped robot-dog concept.
+PUI89 AI HOME is a dedicated indoor mobile assistant concept focused on home safety, environmental monitoring and everyday support. It uses a compact four-wheel design and remains a separate product from PUI89 AI NOMAD, which is intended for indoor and outdoor mobility, travel and carrying assistance.
 
-- **Project:** HOMEGUARD AI HOME
-- **Repository:** https://github.com/Pui89/HOMEGUARD-AI
+- **Project:** PUI89 AI HOME
+- **Repository:** https://github.com/Pui89/AI-HOME
 - **Website:** [English](https://pui89.github.io/home.html) · [ภาษาไทย](https://pui89.github.io/home-th.html)
-- **Related but independent product:** [HOMEGUARD AI NOMAD](https://github.com/Pui89/Guard-Ai-Home-Nomad)
+- **Related but independent product:** [PUI89 AI NOMAD](https://github.com/Pui89/AI-NOMAD)
 
-![HOMEGUARD AI HOME indoor four-wheel robot concept](https://pui89.github.io/images/homeguard-ai-home-concept.svg)
+![PUI89 AI HOME indoor four-wheel robot concept](https://pui89.github.io/images/homeguard-ai-home-concept.svg)
 
 ## Product purpose
 
@@ -61,7 +61,7 @@ HOME and NOMAD must keep separate mechanical designs, navigation, sensor configu
 
 ## Development status
 
-**FOUNDATION / CONCEPT / NOT VALIDATED.** This repository currently establishes the HOME product identity and requirements. No completed robot, real sensor integration, trained model, certified alarm function or real-world safety performance is claimed.
+**FOUNDATION / CONCEPT / NOT VALIDATED.** This repository establishes the HOME product identity and requirements. No completed robot, real sensor integration, trained model, certified alarm function or real-world safety performance is claimed.
 
 The development sequence is: requirements and hazard analysis → software contracts and deterministic synthetic scenarios → tests and evidence reports → simulation → reviewed sensor integration only when resources, licences, security and costs are approved.
 
