@@ -1,4 +1,8 @@
 # PUI89 AI HOME — AI Home Assistant Robot
+
+## Project website QR codes
+
+<table><tr><td align="center"><strong>English website</strong><br><a href="https://pui89.github.io/home.html"><img src="https://pui89.github.io/qr/home-en.png" width="160" alt="PUI89 AI HOME English website QR code"></a><br><a href="https://pui89.github.io/home.html">Open English website</a></td><td align="center"><strong>เว็บไซต์ภาษาไทย</strong><br><a href="https://pui89.github.io/home-th.html"><img src="https://pui89.github.io/qr/home-th.png" width="160" alt="QR Code เว็บไซต์ภาษาไทย PUI89 AI HOME"></a><br><a href="https://pui89.github.io/home-th.html">เปิดเว็บไซต์ภาษาไทย</a></td></tr></table>
 ### An Indoor Mobile Assistant for Home Safety, Monitoring and Everyday Support
 
 **A calmer, more understandable view of home conditions.**
