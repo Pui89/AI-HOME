@@ -106,7 +106,7 @@ HOME and NOMAD must keep separate mechanical designs, navigation, sensor configu
 
 **FOUNDATION / CONCEPT / NOT VALIDATED.** This repository establishes the HOME product identity and requirements. No completed robot, real sensor integration, trained model, certified alarm function or real-world safety performance is claimed.
 
-The development sequence is: requirements and hazard analysis → software contracts and deterministic synthetic scenarios → tests and evidence reports → simulation → reviewed sensor integration only when resources, licences, security and resource requirements are approved, with funding approval where needed.
+The development sequence is: requirements and hazard analysis → software contracts and deterministic synthetic scenarios → tests and evidence reports → simulation → reviewed sensor integration only when resource availability, licences, security and required funding approvals are confirmed.
 
 ## local-first and supply-chain policy
 
