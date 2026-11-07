@@ -149,3 +149,20 @@ This is an evidence-weighted commercial-readiness estimate, not a code-completio
 **Status boundary:** Software tests and simulations do not establish a built, certified, field-tested or commercially validated physical product. Real-world claims require separate, traceable validation.
 
 <!-- PUI89_DAILY_PROGRESS:END -->
+
+
+---
+
+## Security, malware and supply-chain protection
+
+Security policy: [SECURITY.md](SECURITY.md). Report suspected vulnerabilities privately; do not post resident data, camera footage, access details or exploit steps publicly.
+
+Project-specific controls and review requirements:
+- Treat sensor readings, camera/audio inputs, network messages, configuration files and imported logs as untrusted.
+- Validate source, timestamps, ranges, file sizes and stale/conflicting readings; fail safely when evidence is unreliable.
+- Never commit credentials, resident information, floor plans, private recordings or network secrets.
+- Review dependencies, model files and GitHub Actions for provenance, licences and vulnerabilities before adoption.
+- AI recommendations must not automatically operate locks, breakers, valves, appliances or emergency systems; retain human authority.
+- Use least-privilege CI and never expose secrets to untrusted pull-request code.
+
+A scan or passing test is evidence only for the checks actually run; it does not prove the repository is free of malware or vulnerabilities.
