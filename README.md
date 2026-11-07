@@ -98,7 +98,7 @@ The development sequence is: requirements and hazard analysis → software contr
 
 ## local-first and supply-chain policy
 
-No paid API, subscription, cloud GPU or automatic model download is required for this project foundation. No package or external service should be added without checking provenance, licence, security, resource requirements and total cost first. PUI89 excludes Chinese-origin AI models, providers and model-hosting services from its approved stack.
+External services and model downloads require prior technical, licensing, security and resource review. PUI89 excludes Chinese-origin AI models, providers and model-hosting services from its approved stack.
 
 **PUI89 — Intelligent Systems. Verifiable Decisions. Safer Outcomes.**
 
