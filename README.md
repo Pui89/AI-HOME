@@ -1,5 +1,7 @@
 # PUI89 AI HOME — AI Home Assistant Robot
 
+> **PUI89 engineering standard:** [Simple, Safe and Professional](https://github.com/Pui89/Pui89.github.io/blob/main/docs/PUI89_SIMPLE_SAFE_PROFESSIONAL_STANDARD.md) — shared guidance for usability, safety, evidence, privacy and maintainable engineering.
+
 > **PUI89 | Intelligent Systems. Verifiable Decisions. Safer Outcomes.**
 > 
 > **Project:** PUI89 AI HOME  
