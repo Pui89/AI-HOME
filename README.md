@@ -1,5 +1,15 @@
 # PUI89 AI HOME — AI Home Assistant Robot
 
+> **PUI89 | Intelligent Systems. Verifiable Decisions. Safer Outcomes.**
+> 
+> **Project:** PUI89 AI HOME  
+> **Focus:** Indoor home-assistant robot concept and home-safety software platform  
+> **Development stage:** Early software foundation and product requirements; no completed robot or real sensor integration is established.
+> 
+> **Project website:** [English](https://pui89.github.io/home.html) · [ภาษาไทย](https://pui89.github.io/home-th.html) · [PUI89 portfolio](https://pui89.github.io/)
+> 
+> **Validation boundary:** AI recommendations do not replace certified smoke, fire, carbon-monoxide or electrical protection; no physical safety function is claimed.
+
 ## Commercial readiness progress
 
 **28% — evidence-based commercial-readiness estimate**  
