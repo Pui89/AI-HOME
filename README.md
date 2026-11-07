@@ -1,5 +1,10 @@
 # PUI89 AI HOME — AI Home Assistant Robot
 
+## Open-source-first engineering
+
+PUI89 prioritises open-source software, transparent licensing, reproducible workflows and evidence-led collaboration. Model weights, datasets, hosted services and hardware are assessed separately for provenance, licence terms, security, data handling, resource requirements and intended use. Public availability alone does not establish permission for reuse or commercial deployment.
+
+
 > **PUI89 engineering standard:** [Simple, Safe and Professional](https://github.com/Pui89/Pui89.github.io/blob/main/docs/PUI89_SIMPLE_SAFE_PROFESSIONAL_STANDARD.md) — shared guidance for usability, safety, evidence, privacy and maintainable engineering.
 
 > **PUI89 | Intelligent Systems. Verifiable Decisions. Safer Outcomes.**
@@ -106,7 +111,7 @@ HOME and NOMAD must keep separate mechanical designs, navigation, sensor configu
 
 **FOUNDATION / CONCEPT / NOT VALIDATED.** This repository establishes the HOME product identity and requirements. No completed robot, real sensor integration, trained model, certified alarm function or real-world safety performance is claimed.
 
-The development sequence is: requirements and hazard analysis → software contracts and deterministic synthetic scenarios → tests and evidence reports → simulation → reviewed sensor integration only when resources, licences, security and costs are approved.
+The development sequence is: requirements and hazard analysis → software contracts and deterministic synthetic scenarios → tests and evidence reports → simulation → reviewed sensor integration only when resource availability, licences, security and required funding approvals are confirmed.
 
 ## local-first and supply-chain policy
 
@@ -177,7 +182,7 @@ Project-specific controls and review requirements:
 - AI recommendations must not automatically operate locks, breakers, valves, appliances or emergency systems; retain human authority.
 - Use least-privilege CI and never expose secrets to untrusted pull-request code.
 
-A scan or passing test is evidence only for the checks actually run; it does not prove the repository is free of malware or vulnerabilities.
+A scan or passing test is evidence only for the checks actually run; it does not establish whether the repository contains malware or vulnerabilities.
 
 ## PUI89 seven-dimension quality recommendations
 
