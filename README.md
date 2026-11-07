@@ -106,7 +106,7 @@ HOME and NOMAD must keep separate mechanical designs, navigation, sensor configu
 
 **FOUNDATION / CONCEPT / NOT VALIDATED.** This repository establishes the HOME product identity and requirements. No completed robot, real sensor integration, trained model, certified alarm function or real-world safety performance is claimed.
 
-The development sequence is: requirements and hazard analysis → software contracts and deterministic synthetic scenarios → tests and evidence reports → simulation → reviewed sensor integration only when resources, licences, security and funding and resource requirements are approved.
+The development sequence is: requirements and hazard analysis → software contracts and deterministic synthetic scenarios → tests and evidence reports → simulation → reviewed sensor integration only when resources, licences, security and resource requirements are approved, with funding approval where needed.
 
 ## local-first and supply-chain policy
 
@@ -177,7 +177,7 @@ Project-specific controls and review requirements:
 - AI recommendations must not automatically operate locks, breakers, valves, appliances or emergency systems; retain human authority.
 - Use least-privilege CI and never expose secrets to untrusted pull-request code.
 
-A scan or passing test is evidence only for the checks actually run; it does not prove the repository is absence of malware or vulnerabilities.
+A scan or passing test is evidence only for the checks actually run; it does not establish whether the repository contains malware or vulnerabilities.
 
 ## PUI89 seven-dimension quality recommendations
 
