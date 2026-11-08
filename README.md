@@ -1,5 +1,10 @@
 # PUI89 AI Home Assistant Robot
 
+
+## Public privacy boundary
+
+This public README is limited to the project overview, approved concept material and evidence that can be shared openly. Do not publish API keys, passwords, private tokens, Wi-Fi or internal network settings, private camera footage, personal or precise location data, detailed security configurations, unreleased engineering specifications, or confidential commercial plans. Keep sensitive material in an appropriately access-controlled private location. If a credential may have been exposed, revoke it; removing it from the latest commit does not remove it from Git history.
+
 ## Open-source-first engineering
 
 PUI89 prioritises open-source software, transparent licensing, reproducible workflows and evidence-led collaboration. Model weights, datasets, hosted services and hardware are assessed separately for provenance, licence terms, security, data handling, resource requirements and intended use. Public availability alone does not establish permission for reuse or commercial deployment.
@@ -34,17 +39,6 @@ PUI89 prioritises open-source software, transparent licensing, reproducible work
 Research areas include water leaks and moisture; temperature, humidity and heat; smoke/fire-related signals from appropriate certified devices; non-invasive electrical indicators; visible surface or vibration changes; and environmental changes such as sound and light.
 
 These are monitoring and evidence-research areas—not validated detection, diagnosis or prevention capabilities.
-
-## Proposed indoor design
-
-| Item | Requirement |
-|---|---|
-| Mobility | Compact four-wheel indoor platform; supervised, low-speed movement |
-| Complete weight | 8 kg target; 10 kg absolute maximum, including battery, sensors, computer and enclosure |
-| Safety | Protected wheels, soft bumper, obstacle/drop-off awareness and safe stop on uncertainty |
-| Privacy | Data minimisation; avoid unnecessary video, face recognition and conversation recording |
-
-These are design targets, not measured prototype specifications. HOME and NOMAD share selected PUI89 AI Core contracts, but retain separate mechanical designs, sensors, navigation, environments and validation.
 
 ## Shared AI Core
 
@@ -155,23 +149,3 @@ Project-wide guidance is maintained centrally to avoid repeating the same framew
 - [Project strength scorecard method](https://github.com/Pui89/Pui89.github.io/blob/main/docs/PROJECT_STRENGTH_SCORECARD.md)
 - [Security policy](SECURITY.md)
 
-## Materials & Hardware — Research Plan
-
-**Status: software-first concept and hardware research.** This is not a claim of a built or certified home-safety robot. Start with fixed sensors and a software dashboard before considering mobility.
-
-| Subsystem | Candidate materials / hardware | Purpose and checks before selection |
-|---|---|---|
-| Housing/mounts | Verified flame-retardant-rated enclosure materials where appropriate, polymers or metal brackets | Verify actual material rating, heat exposure, ventilation and mounting strength |
-| Electrical monitoring | Certified plug-in energy meter or professionally installed sensing equipment | Mains isolation, local electrical code, measurement accuracy and qualified installation |
-| Temperature/humidity | Digital sensors and protected vents | Calibration, placement, condensation and drift |
-| Water/leak | Floor leak probes, rope sensors or contact sensors | Coverage, false alarms, corrosion and battery life |
-| Fire/smoke interface | Certified standalone smoke/heat alarm; permitted alarm-state interface only | Local fire code, certification and alarm independence; never replace life-safety alarms |
-| Crack/vibration | Contact vibration sensor, accelerometer and optional visual markers | Mounting, baseline, noise and structural-engineer interpretation |
-| Air/mould-risk context | Humidity/temperature sensors; optional VOC sensor as a non-diagnostic indicator | Selectivity, calibration and no claim to diagnose mould |
-| Sound/light | Sound-event and ambient-light sensors | Privacy, consent, local processing and minimal recording |
-| Compute/connectivity | Low-power local computer or microcontroller, local network and offline storage | Power budget, updates, access control and cybersecurity |
-| Power/backup | Certified low-voltage supply, protected battery backup and fusing | Electrical safety, battery thermal risk and backup runtime |
-
-Avoid modifying building wiring, fire systems or structural elements without qualified professionals and permissions. Sensors provide indications, not definitive diagnoses of structural damage, fire cause, mould or electrical faults. Physical installation and connections to mains or life-safety systems require qualified installers and applicable approvals.
-
-**Procurement rule:** research only. No purchases, subscriptions, supplier contact or paid services without explicit approval. Verify datasheets, approvals, sensor limits, materials, price, warranty and privacy implications.
