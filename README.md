@@ -1,4 +1,4 @@
-# PUI89 AI Home Assistant Robot Assistant Robot — AI Home Assistant Robot Assistant Robot
+# PUI89 AI Home Assistant Robot — AI Home Assistant Robot
 
 ## Open-source-first engineering
 
@@ -9,7 +9,7 @@ PUI89 prioritises open-source software, transparent licensing, reproducible work
 
 > **PUI89 | Intelligent Systems. Verifiable Decisions. Safer Outcomes.**
 > 
-> **Project:** PUI89 AI Home Assistant Robot Assistant Robot  
+> **Project:** PUI89 AI Home Assistant Robot  
 > **Focus:** Indoor home-assistant robot concept and home-safety software platform  
 > **Development stage:** Early software foundation and product requirements; no completed robot or real sensor integration is established.
 > 
@@ -45,20 +45,20 @@ _Last readiness review: 7 November 2026. This estimate can rise or fall as evide
 
 ## Project website QR codes
 
-<table><tr><td align="center"><strong>English website</strong><br><a href="https://pui89.github.io/home.html"><img src="https://pui89.github.io/qr/home-en.png" width="160" alt="PUI89 AI Home Assistant Robot Assistant Robot English website QR code"></a><br><a href="https://pui89.github.io/home.html">Open English website</a></td><td align="center"><strong>เว็บไซต์ภาษาไทย</strong><br><a href="https://pui89.github.io/home-th.html"><img src="https://pui89.github.io/qr/home-th.png" width="160" alt="QR Code เว็บไซต์ภาษาไทย PUI89 AI Home Assistant Robot Assistant Robot"></a><br><a href="https://pui89.github.io/home-th.html">เปิดเว็บไซต์ภาษาไทย</a></td></tr></table>
+<table><tr><td align="center"><strong>English website</strong><br><a href="https://pui89.github.io/home.html"><img src="https://pui89.github.io/qr/home-en.png" width="160" alt="PUI89 AI Home Assistant Robot English website QR code"></a><br><a href="https://pui89.github.io/home.html">Open English website</a></td><td align="center"><strong>เว็บไซต์ภาษาไทย</strong><br><a href="https://pui89.github.io/home-th.html"><img src="https://pui89.github.io/qr/home-th.png" width="160" alt="QR Code เว็บไซต์ภาษาไทย PUI89 AI Home Assistant Robot"></a><br><a href="https://pui89.github.io/home-th.html">เปิดเว็บไซต์ภาษาไทย</a></td></tr></table>
 ### An Indoor Mobile Assistant for Home Safety, Monitoring and Everyday Support
 
 **A calmer, more understandable view of home conditions.**
 
-PUI89 AI Home Assistant Robot Assistant Robot is a dedicated indoor mobile assistant concept focused on home safety, environmental monitoring and everyday support. It uses a compact four-wheel design and remains a separate product from PUI89 AI NOMAD, which is intended for indoor and outdoor mobility, travel and carrying assistance.
+PUI89 AI Home Assistant Robot is a dedicated indoor mobile assistant concept focused on home safety, environmental monitoring and everyday support. It uses a compact four-wheel design and remains a separate product from PUI89 AI NOMAD, which is intended for indoor and outdoor mobility, travel and carrying assistance.
 
-- **Project:** PUI89 AI Home Assistant Robot Assistant Robot
-- **Product type:** AI Home Assistant Robot Assistant Robot
+- **Project:** PUI89 AI Home Assistant Robot
+- **Product type:** AI Home Assistant Robot
 - **Repository:** https://github.com/Pui89/AI-Home-Safety-Robot
 - **Website:** [English](https://pui89.github.io/home.html) · [ภาษาไทย](https://pui89.github.io/home-th.html)
 - **Related but independent product:** [PUI89 AI NOMAD](https://github.com/Pui89/AI-NOMAD)
 
-![PUI89 AI Home Assistant Robot Assistant Robot indoor four-wheel robot concept](https://pui89.github.io/images/homeguard-ai-home-concept.svg)
+![PUI89 AI Home Assistant Robot indoor four-wheel robot concept](https://pui89.github.io/images/homeguard-ai-home-concept.svg)
 
 ## Product purpose
 
@@ -136,7 +136,7 @@ The Apache License, Version 2.0 applies **only** to the two source-code files li
 - `pui89_models/hf_vision.py`
 - `tests/test_hf_vision_adapter.py`
 
-**Not licensed under Apache-2.0:** the PUI89 name, logos, trademarks, brand identity, AI Home Assistant Robot Assistant Robot product identity, robot appearance and industrial/product designs, CAD or mechanical drawings, concept images/artwork, website, this README, other documentation, repository configuration, and all unlisted files. Those materials remain reserved to their respective rights holders, to the extent those rights exist and are owned or controlled by them. Third-party assets and models remain under their own terms.
+**Not licensed under Apache-2.0:** the PUI89 name, logos, trademarks, brand identity, AI Home Assistant Robot product identity, robot appearance and industrial/product designs, CAD or mechanical drawings, concept images/artwork, website, this README, other documentation, repository configuration, and all unlisted files. Those materials remain reserved to their respective rights holders, to the extent those rights exist and are owned or controlled by them. Third-party assets and models remain under their own terms.
 
 See [`LICENSE`](LICENSE), [`LICENSE-SCOPE.md`](LICENSE-SCOPE.md) and [`NOTICE`](NOTICE). Apache-2.0 does not grant permission to use PUI89 trademarks or imply PUI89 endorsement.
 
