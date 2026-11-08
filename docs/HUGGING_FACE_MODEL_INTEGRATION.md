@@ -1,4 +1,4 @@
-# Hugging Face vision-model integration
+# PUI89 AI HOME — AI Home Assistant Robot: Hugging Face Vision-Model Integration
 
 **Status: optional model adapters added; model weights are not downloaded and inference is not yet benchmarked in this repository.**
 

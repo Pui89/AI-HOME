@@ -50,7 +50,7 @@ _Last readiness review: 7 November 2026. This estimate can rise or fall as evide
 
 **A calmer, more understandable view of home conditions.**
 
-PUI89 AI HOME is a dedicated indoor mobile assistant concept focused on home safety, environmental monitoring and everyday support. It uses a compact four-wheel design and remains a separate product from PUI89 AI NOMAD, which is intended for indoor and outdoor mobility, travel and carrying assistance.
+PUI89 AI HOME is a dedicated indoor mobile assistant concept focused on home safety, environmental monitoring and everyday support. It uses a compact four-wheel design and remains a separate product from PUI89 AI NOMAD, which is intended for outdoor mobility, travel and carrying assistance.
 
 - **Project:** PUI89 AI HOME
 - **Product type:** AI Home Assistant Robot

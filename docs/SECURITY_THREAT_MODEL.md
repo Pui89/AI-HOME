@@ -1,4 +1,4 @@
-# PUI89 AI HOME — Security and Safety Threat Model
+# PUI89 AI HOME — AI Home Assistant Robot: Security and Safety Threat Model
 
 **Status:** initial design baseline; not a certification or completed security assessment.
 
@@ -35,7 +35,7 @@ Treat data crossing every boundary as untrusted until validated. Do not assume s
 | Denial of service or resource exhaustion | Bound image sizes, input counts, runtime and memory; timeouts; fail safely without disabling certified devices |
 
 ## Non-negotiable safety boundaries
-- AI HOME must not control locks, breakers, valves, cooking appliances, certified alarms or emergency systems.
+- The AI Home Assistant Robot must not control locks, breakers, valves, cooking appliances, certified alarms or emergency systems.
 - Never delay evacuation, emergency calls or established safety procedures for AI analysis.
 - No structural, electrical, fire, smoke or mold diagnosis is claimed by this repository.
 - A model score is not a probability of safety unless calibrated and validated for the exact task.

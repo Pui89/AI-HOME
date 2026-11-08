@@ -1,6 +1,6 @@
-# Contributing to PUI89 AI HOME
+# Contributing to PUI89 AI HOME — AI Home Assistant Robot
 
-Thank you for helping improve PUI89 AI HOME. This repository is currently a concept and software foundation, not a validated robot or certified safety product.
+Thank you for helping improve PUI89 AI HOME, the PUI89 AI Home Assistant Robot project. This repository is currently a concept and software foundation, not a validated robot or certified safety product.
 
 ## Before proposing a change
 - Explain the problem, affected files and expected behaviour.
