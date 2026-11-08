@@ -62,6 +62,16 @@ The project is designed to use versioned `WorldState`, `Observation`, `ActionPro
 
 Requirements and hazard analysis → software contracts and synthetic tests → evidence reports → simulation → reviewed sensor integration. No physical safety performance, real-world sensor accuracy or certified function is currently claimed.
 
+## Engineering foundation — Phase 2
+
+The following documents define the proposed engineering baseline. They are requirements and test plans, **not evidence that a robot or safety function has been built or validated**.
+
+- [Product requirements](docs/PRODUCT_REQUIREMENTS.md) — scope, users, measurable requirements and design targets.
+- [System architecture](docs/SYSTEM_ARCHITECTURE.md) — evidence flow, shared AI Core contracts and human-review boundary.
+- [Safety and cybersecurity requirements](docs/SAFETY_AND_CYBERSECURITY_REQUIREMENTS.md) — safety gates, privacy and security controls.
+- [Verification and validation plan](docs/VERIFICATION_AND_VALIDATION_PLAN.md) — software, simulation, bench and supervised test stages.
+- [Hardware specification](docs/HARDWARE_SPECIFICATION.md) — component selection criteria and TBD engineering values; research only, no purchasing.
+
 ## Current progress
 
 The repository's **28% evidence-based commercial-readiness estimate** is shown in the [daily progress record](#daily-project-progress). It is provisional, not a code-completion percentage, certification or claim that the robot is ready to sell. Planned work and unrun tests do not count as completed evidence.
