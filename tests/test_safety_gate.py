@@ -1,5 +1,9 @@
 """Standard-library tests for the AI HOME safety-gate reference."""
+import sys
 import unittest
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 
 from pui89_home.safety_gate import (
     ActionRequest,
@@ -86,8 +90,7 @@ class SafetyGateTests(unittest.TestCase):
         decision, _ = evaluate_proposal(
             GOOD_EVIDENCE, ActionRequest(category="report")
         )
-        self.assertNotEqual(decision, "ALLOW")
-        self.assertNotEqual(decision, "EXECUTE")
+        self.assertIn(decision, (Decision.HOLD, Decision.BLOCKED, Decision.REVIEW_REQUIRED))
 
 
 if __name__ == "__main__":
