@@ -243,3 +243,24 @@ Scores are awarded only through a dated review with a defined scope, version/com
 
 This score is separate from any commercial-readiness estimate and is not certification, safety approval or an investment rating.
 <!-- PUI89_PROJECT_STRENGTH_SCORECARD:END -->
+
+## Materials & Hardware — Research Plan
+
+**Status: software-first concept and hardware research.** This is not a claim of a built or certified home-safety robot. Start with fixed sensors and a software dashboard before considering mobility.
+
+| Subsystem | Candidate materials / hardware | Purpose and checks before selection |
+|---|---|---|
+| Housing/mounts | Verified flame-retardant-rated enclosure materials where appropriate, polymers or metal brackets | Verify actual material rating, heat exposure, ventilation and mounting strength |
+| Electrical monitoring | Certified plug-in energy meter or professionally installed sensing equipment | Mains isolation, local electrical code, measurement accuracy and qualified installation |
+| Temperature/humidity | Digital sensors and protected vents | Calibration, placement, condensation and drift |
+| Water/leak | Floor leak probes, rope sensors or contact sensors | Coverage, false alarms, corrosion and battery life |
+| Fire/smoke interface | Certified standalone smoke/heat alarm; permitted alarm-state interface only | Local fire code, certification and alarm independence; never replace life-safety alarms |
+| Crack/vibration | Contact vibration sensor, accelerometer and optional visual markers | Mounting, baseline, noise and structural-engineer interpretation |
+| Air/mould-risk context | Humidity/temperature sensors; optional VOC sensor as a non-diagnostic indicator | Selectivity, calibration and no claim to diagnose mould |
+| Sound/light | Sound-event and ambient-light sensors | Privacy, consent, local processing and minimal recording |
+| Compute/connectivity | Low-power local computer or microcontroller, local network and offline storage | Power budget, updates, access control and cybersecurity |
+| Power/backup | Certified low-voltage supply, protected battery backup and fusing | Electrical safety, battery thermal risk and backup runtime |
+
+Avoid modifying building wiring, fire systems or structural elements without qualified professionals and permissions. Sensors provide indications, not definitive diagnoses of structural damage, fire cause, mould or electrical faults. Physical installation and connections to mains or life-safety systems require qualified installers and applicable approvals.
+
+**Procurement rule:** research only. No purchases, subscriptions, supplier contact or paid services without explicit approval. Verify datasheets, approvals, sensor limits, materials, price, warranty and privacy implications.
