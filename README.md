@@ -46,6 +46,24 @@ _Last readiness review: 7 November 2026. This estimate can rise or fall as evide
 ## Project website QR codes
 
 <table><tr><td align="center"><strong>English website</strong><br><a href="https://pui89.github.io/home.html"><img src="https://pui89.github.io/qr/home-en.png" width="160" alt="PUI89 AI HOME English website QR code"></a><br><a href="https://pui89.github.io/home.html">Open English website</a></td><td align="center"><strong>เว็บไซต์ภาษาไทย</strong><br><a href="https://pui89.github.io/home-th.html"><img src="https://pui89.github.io/qr/home-th.png" width="160" alt="QR Code เว็บไซต์ภาษาไทย PUI89 AI HOME"></a><br><a href="https://pui89.github.io/home-th.html">เปิดเว็บไซต์ภาษาไทย</a></td></tr></table>
+
+## PUI89 product maturity snapshot — 7 November 2026
+
+**Strategic direction: From AI Projects to AI Products.**  
+**Current maturity: Grade 1–2 — Product Definition and Early Engineering Foundation.** HOME has a distinct product identity, documented indoor use cases and proposed engineering requirements. It is not a built or validated home robot.
+
+| Area | Verified position |
+|---|---|
+| Product definition | Dedicated four-wheel indoor AI Home Assistant Robot, separate from the quadruped AI NOMAD product. |
+| Requirements | Proposed complete-weight target 8 kg and maximum 10 kg; these are design requirements, not measured prototype specifications. Home safety, environmental monitoring, privacy and owner-facing evidence reports are documented. |
+| Software and AI | Software-first architecture and opt-in model-adapter code are documented. Model inference and HOME-specific accuracy are not yet tested; no real sensor integration is established. |
+| Physical product | No completed robot, validated mobility, sensor performance, certified alarm function or real-world hazard-prevention capability is claimed. |
+
+**Next product gate:** turn the product requirements into a traceable engineering specification and hazard register; define sensor selection, privacy/data handling, battery and thermal safety, safe-stop behaviour, environmental limits and measurable acceptance tests. Build deterministic software tests and simulation evidence before considering any sensor or hardware integration.
+
+**Product discipline:** certified smoke, fire, carbon-monoxide and electrical protection devices remain primary. HOME must not operate breakers, locks, valves or appliances, and must not claim building diagnosis or hazard prevention. No paid API, cloud GPU, automatic model download or physical robot actuation is part of this update.
+
+
 ### An Indoor Mobile Assistant for Home Safety, Monitoring and Everyday Support
 
 **A calmer, more understandable view of home conditions.**
