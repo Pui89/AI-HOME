@@ -1,36 +1,49 @@
-name: PUI89 AI HOME Dependency-Free Contract Smoke
-
+name: PUI89 AI HOME Shared AI Core v0.1 Adapter
 on:
   push:
     branches: [main]
     paths:
       - "pui89_models/**"
       - "tests/test_hf_vision_adapter.py"
+      - "tests/test_shared_core_v01.py"
       - ".github/workflows/pui89-home-contract-smoke.yml"
   pull_request:
     paths:
       - "pui89_models/**"
       - "tests/test_hf_vision_adapter.py"
+      - "tests/test_shared_core_v01.py"
       - ".github/workflows/pui89-home-contract-smoke.yml"
   workflow_dispatch:
-
 permissions:
   contents: read
-
 concurrency:
   group: pui89-home-contract-smoke-${{ github.ref }}
   cancel-in-progress: true
-
 jobs:
   adapter-contract:
     runs-on: ubuntu-slim
-    timeout-minutes: 3
+    timeout-minutes: 5
     steps:
-      - uses: actions/checkout@v4
+      - name: Check out AI HOME
+        uses: actions/checkout@v4
         with:
+          persist-credentials: false
+      - name: Check out pinned Shared AI Core schemas
+        uses: actions/checkout@v4
+        with:
+          repository: Pui89/PUI89-Shared-AI-Core
+          ref: e762f38f1e34ddf2ce9e22e12605bc08aa493ff9
+          path: shared-ai-core
           persist-credentials: false
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
-      - name: Run dependency-free adapter contract tests
+      - name: Run existing dependency-free vision adapter tests
+        env:
+          PYTHONPATH: pui89_models
         run: python -m unittest discover -s tests -p "test_hf_vision_adapter.py" -v
+      - name: Check AI HOME mapping against Shared AI Core v0.1
+        env:
+          PYTHONPATH: pui89_models
+          PUI89_SHARED_CORE_DIR: shared-ai-core
+        run: python -m unittest discover -s tests -p "test_shared_core_v01.py" -v
