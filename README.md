@@ -34,6 +34,25 @@ PUI89 prioritises open-source software, transparent licensing, reproducible work
 
 ![PUI89 AI Home Assistant Robot concept](https://pui89.github.io/images/homeguard-ai-home-concept.svg)
 
+## Compact physical design target — AI HOME
+
+The current proposed compact form factor is:
+
+| Parameter | Design target |
+|---|---:|
+| Width (W) | **25 cm** |
+| Length / depth (D) | **25 cm** |
+| Height (H) | **40 cm** |
+| Maximum total mass | **8 kg**, including the battery |
+
+These are **provisional design targets**, not measured prototype specifications. The dimensions describe the intended external envelope of the assembled unit, including its wheels and fixed sensor housing. The 8 kg limit includes the battery, chassis, wheels, motors, electronics, sensors, wiring and enclosure.
+
+**Design intent:** a compact, stable, four-wheel indoor assistant that can fit into a small home while carrying its sensing and computing equipment. Keep heavier components low in the chassis, protect wheels and moving parts, provide adequate ventilation and service access, and avoid sharp external edges. HOME remains an indoor home-condition awareness product; AI NOMAD is the separate portable travel/outdoor assistant.
+
+**Engineering checks required before freezing the design:** verify the complete mass budget against selected components; centre of gravity and tip resistance; wheel clearance and floor transitions; obstacle and collision behaviour; cable snagging; thermal management and ventilation; battery containment and charging safety; acoustic performance; cleaning and maintenance access; and safe supervised stopping. The 25 × 25 × 40 cm envelope and 8 kg limit must be checked against the actual sensor layout and enclosure.
+
+**Capability boundary:** this target does not imply stair climbing, operation on rough terrain, water resistance, fire resistance, an IP rating, certified alarm capability, or validated safety performance. Certified household protection devices remain primary. No prototype dimensions, measured mass or physical validation are currently established by this design target.
+
 ## What it is designed to monitor
 
 Research areas include water leaks and moisture; temperature, humidity and heat; smoke/fire-related signals from appropriate certified devices; non-invasive electrical indicators; visible surface or vibration changes; and environmental changes such as sound and light.
