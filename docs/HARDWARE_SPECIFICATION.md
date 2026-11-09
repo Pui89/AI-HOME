@@ -7,8 +7,8 @@
 | Item | Current target | Evidence status |
 |---|---|---|
 | Platform | Four-wheel indoor mobile assistant | Concept only |
-| Complete mass | 8 kg target; 10 kg maximum including battery, sensors, computer, enclosure and accessories | Proposed; not measured |
-| Dimensions | Not yet specified | TBD |
+| Complete mass | **8.00 kg maximum**, including battery, sensors, computer, chassis, wheels, wiring, enclosure and accessories | Proposed ceiling; not measured |
+| Dimensions | **25 cm W × 25 cm D × 40 cm H**, complete external envelope including wheels and fixed sensor housing | Proposed; not measured |
 | Speed and acceleration | Not yet specified; low-speed supervised movement is the design intent | TBD |
 | Turning radius and floor clearance | Not yet specified | TBD |
 | Runtime and charging time | Not yet specified | TBD |
