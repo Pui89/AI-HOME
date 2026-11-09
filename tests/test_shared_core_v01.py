@@ -44,10 +44,7 @@ class HomeSharedCoreV01Tests(unittest.TestCase):
             build_home_v01_records(**{**args, "modality":"ultrasound"})
 
     def test_shared_core_schema_required_fields_match(self):
-        core_dir = os.environ.get("PUI89_SHARED_CORE_DIR")
-        if not core_dir:
-            self.skipTest("Shared AI Core checkout is supplied by GitHub Actions")
-        schema_dir = Path(core_dir) / "schemas" / "v0.1"
+        schema_dir = ROOT / "schemas" / "v0.1"
         bundle = self.make_bundle()
         for key, filename in (("observation","observation.schema.json"),("action_proposal","action-proposal.schema.json")):
             schema = json.loads((schema_dir / filename).read_text(encoding="utf-8"))
