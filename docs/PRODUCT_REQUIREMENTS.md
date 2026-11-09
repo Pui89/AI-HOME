@@ -42,8 +42,10 @@ Only modalities supported by an identified, lawful, tested sensor or dataset may
 ## 5. Physical design targets
 
 - Mobility concept: four wheels, indoor use, supervised movement.
-- Complete mass: **8 kg target; 10 kg maximum**, including battery, sensors, computer, enclosure and accessories.
-- Dimensions, centre of gravity, turning radius, speed, stopping distance, threshold-crossing ability, floor loading, runtime and charging time: **TBD**. Do not publish invented values.
+- Complete mass: **8.00 kg maximum**, including battery, sensors, computer, chassis, wheels, wiring, enclosure and accessories.
+- External dimensions: **25 cm W × 25 cm D × 40 cm H** as a provisional complete assembled envelope including wheels and fixed sensor housing; not measured.
+- Centre of gravity, turning radius, speed, stopping distance, threshold-crossing ability, floor loading, runtime and charging time: **TBD**. Do not publish invented values.
+- Use the [preliminary internal layout and 8 kg mass budget](AI_HOME_INTERNAL_LAYOUT_AND_MASS_BUDGET.md) for planning only; its allocations are not measured component masses or selected hardware.
 - Protection against water ingress, heat and fire: define from a documented hazard analysis and verified component/material ratings. Do not describe the robot as waterproof or fireproof without applicable test evidence.
 
 ## 6. Human factors
