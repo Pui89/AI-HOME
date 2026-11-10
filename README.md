@@ -169,3 +169,8 @@ Project-wide guidance is maintained centrally to avoid repeating the same framew
 - [Project strength scorecard method](https://github.com/Pui89/Pui89.github.io/blob/main/docs/PROJECT_STRENGTH_SCORECARD.md)
 - [Security policy](SECURITY.md)
 
+
+
+## Spatial Intelligence integration
+
+See [the project-specific spatial integration profile](docs/spatial-intelligence/README.md). Runtime sensor integration and physical validation remain pending.
