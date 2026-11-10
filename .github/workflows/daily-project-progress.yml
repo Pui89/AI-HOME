@@ -41,7 +41,7 @@ jobs:
       PUI89_CADENCE: ${{ github.event_name == 'workflow_dispatch' && inputs.cadence || (github.event.schedule == '40 16 * * *' && 'daily') || (github.event.schedule == '50 16 * * 0' && 'weekly') || (github.event.schedule == '55 16 1 * *' && 'monthly') || (github.event.schedule == '5 17 31 12 *' && 'yearly') || 'manual' }}
     steps:
       - name: Check out repository
-        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
       - name: Validate and generate project intelligence reports
         run: |
           python -m py_compile tools/update_project_progress.py
