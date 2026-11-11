@@ -1,4 +1,4 @@
-# PUI89 AI Home Assistant Robot
+# PUI89 AI HOME — Home Assistant Robot
 
 
 ## Public privacy boundary
@@ -14,7 +14,7 @@ PUI89 prioritises open-source software, transparent licensing, reproducible work
 
 > **PUI89 | Intelligent Systems. Verifiable Decisions. Safer Outcomes.**
 > 
-> **Project:** PUI89 AI Home Assistant Robot  
+> **Project:** PUI89 AI HOME — Home Assistant Robot  
 > **Focus:** Indoor home-assistant robot concept and home-safety software platform  
 > **Development stage:** Early software foundation and product requirements; no completed robot or real sensor integration is established.
 > 
@@ -30,7 +30,7 @@ PUI89 prioritises open-source software, transparent licensing, reproducible work
 - **Purpose:** help residents notice changes, understand evidence and decide when human attention is needed.
 - **Websites:** [English](https://pui89.github.io/home.html) · [ภาษาไทย](https://pui89.github.io/home-th.html) · [PUI89 portfolio](https://pui89.github.io/)
 - **Repository:** [Pui89/AI-Home-Safety-Robot](https://github.com/Pui89/AI-Home-Safety-Robot)
-- **Related product:** [PUI89 AI NOMAD](https://github.com/Pui89/AI-NOMAD) is a separate indoor/outdoor and travel platform.
+- **Related but separate project:** [PUI89 AI NOMAD](https://github.com/Pui89/AI-Mobile-Assistant-Robot) is a separate mobile-assistant platform; HOME and NOMAD have separate repositories, requirements and validation.
 
 ![PUI89 AI Home Assistant Robot concept](https://pui89.github.io/images/homeguard-ai-home-concept.svg)
 
@@ -86,9 +86,14 @@ The following documents define the proposed engineering baseline. They are requi
 - [Hardware specification](docs/HARDWARE_SPECIFICATION.md) — component selection criteria and TBD engineering values; research only, no purchasing.
 - [Preliminary internal layout and 8 kg mass budget](docs/AI_HOME_INTERNAL_LAYOUT_AND_MASS_BUDGET.md) — packaging zones, category-level BOM and engineering gates; planning allocations only, not measured weights or selected parts.
 
-## Current progress
+## Current evidence status — reviewed 11 November 2026
 
-The repository's **28% evidence-based commercial-readiness estimate** is shown in the [daily progress record](#daily-project-progress). It is provisional, not a code-completion percentage, certification or claim that the robot is ready to sell. Planned work and unrun tests do not count as completed evidence.
+- **Project stage:** early software foundation and product requirements; no completed robot or real sensor integration is established.
+- **Shared Core documentation:** the Network Intelligence adoption boundary was added and merged on 11 November 2026. The upstream module supports static diagrams from a user-declared inventory only.
+- **Runtime integration:** an AI HOME Network Intelligence adapter is **not implemented**. The documentation change does not add network scanning, monitoring, sensor integration, or device-health verification.
+- **Readiness estimate:** the 28% evidence-based commercial-readiness figure in the daily progress record is a historical snapshot last reviewed on 7 November 2026. It has not been recalculated from the 11 November documentation update and must not be presented as a current measured score.
+
+See the [AI HOME spatial-intelligence integration boundary](docs/spatial-intelligence/README.md), [machine-readable integration profile](docs/spatial-intelligence/INTEGRATION_PROFILE.json), and [Shared AI Core adoption notes](docs/PUI89_CORE_ADOPTION.md).
 
 ## Website QR codes
 
