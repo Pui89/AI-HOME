@@ -1,11 +1,30 @@
 # PUI89 Shared AI Core — AI HOME Adapter
 
-**Status:** Integration plan; documentation only.  
+**Status:** Integration plan; documentation only. Shared Core Network Intelligence v0.1 is available on the Shared AI Core main branch; AI HOME runtime adoption remains pending.
 **Platform contract:** [PUI89 Evidence-to-Action Intelligence Platform](https://github.com/Pui89/Pui89.github.io/blob/main/docs/PUI89_EVIDENCE_TO_ACTION_PLATFORM.md)
 
 ## Purpose
 
 Use shared evidence, world-state, change tracking, uncertainty and safety proposal contracts for the AI HOME software platform and future HOME/NOMAD devices. This guide does not claim a completed robot or certified safety function.
+
+## Shared Core Network Intelligence reference
+
+The dependency-light Network Intelligence module is available at pui89_core/network_topology.py in [PUI89 Shared AI Core](https://github.com/Pui89/PUI89-Shared-AI-Core). It validates user-declared inventory and renders static SVG topology diagrams. The implementation and tests were merged through [PR #37](https://github.com/Pui89/PUI89-Shared-AI-Core/pull/37); the corresponding [GitHub Actions run](https://github.com/Pui89/PUI89-Shared-AI-Core/actions/runs/42984419052) completed successfully.
+
+Potential AI HOME use is limited to an optional inventory context for routers, switches, servers, access points and local compute devices. It may help a human understand which declared infrastructure supports the home platform. It must not be treated as a live sensor, health monitor, intrusion detector, or proof that a device is reachable or secure.
+
+### Integration boundary
+
+- Consume only a user-supplied, reviewed inventory; no automatic network discovery or port scanning.
+- Keep network inventory separate from room/sensor observations unless a documented evidence relationship exists.
+- Preserve source, timestamp, inventory revision, provenance and unknown/stale status.
+- Represent any topology-derived state as a time-bounded estimate with explicit unknowns; do not infer device health from a drawn link.
+- Any recommendation remains advisory, requires human review, and has execution_authorized=false.
+- Never store passwords, API keys, private keys or Wi-Fi credentials in topology files.
+- Treat topology exports as sensitive infrastructure data; keep them local/private unless the owner explicitly approves disclosure.
+- No network configuration changes, remote commands, or physical actuation are in scope.
+
+The current AI HOME repository has no verified runtime adapter for this module. Do not mark integration complete until a pinned interface, project-owned synthetic fixtures, negative tests, CI evidence and a retained conformance report exist.
 
 ## Domain observations
 

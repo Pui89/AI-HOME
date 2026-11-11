@@ -1,19 +1,32 @@
 {
-  "profile_version": "0.1.0",
+  "profile_version": "0.2.0",
   "project_id": "ai-home-safety-robot",
   "project_name": "AI HOME",
-  "integration_status": "profile_added_runtime_integration_pending",
+  "integration_status": "shared_core_reference_available_runtime_integration_pending",
   "shared_core": {
     "repository": "Pui89/PUI89-Shared-AI-Core",
-    "pull_request": "https://github.com/Pui89/PUI89-Shared-AI-Core/pull/26",
-    "release_status": "draft_not_merged"
+    "network_intelligence_pr": "https://github.com/Pui89/PUI89-Shared-AI-Core/pull/37",
+    "network_intelligence_commit": "225a8d250483fa218b58118325aa66ccd6538a2f",
+    "release_status": "merged_main",
+    "network_topology_module": "pui89_core/network_topology.py",
+    "network_topology_tests": "tests/test_network_topology.py",
+    "ci_run": "https://github.com/Pui89/PUI89-Shared-AI-Core/actions/runs/42984419052",
+    "ci_status": "success"
   },
-  "intended_use": "Advisory indoor room layout, obstacle and spatial-change context.",
-  "recommended_modalities": [
-    "rgb",
-    "lidar",
-    "depth"
-  ],
+  "network_intelligence": {
+    "availability": "implemented_in_shared_core",
+    "ai_home_adoption": "not_implemented",
+    "intended_use": "Optional, user-declared inventory context for routers, switches, servers, access points and local compute devices that support AI HOME infrastructure.",
+    "data_mode": "static_declared_inventory_only",
+    "not_supported": [
+      "live network discovery or scanning",
+      "credential collection or device configuration",
+      "network health or cybersecurity verification",
+      "automatic remediation or physical actuation"
+    ]
+  },
+  "intended_spatial_use": "Advisory indoor room layout, obstacle and spatial-change context.",
+  "recommended_modalities": ["rgb", "lidar", "depth"],
   "planned_spatial_tasks": [
     "Indoor room and obstacle geometry",
     "Spatial change records with provenance and timestamps",
@@ -21,8 +34,10 @@
   ],
   "limitations_and_safety_boundaries": [
     "Geometry does not identify fire, gas, electrical, structural or health hazards.",
+    "Network topology diagrams do not prove device reachability, availability, security or correct configuration.",
     "No emergency response or home-safety guarantee.",
-    "Privacy-preserving local processing and sensor permissions require separate review."
+    "Privacy-preserving local processing and sensor permissions require separate review.",
+    "Network inventories and topology diagrams are sensitive infrastructure data and must not be published without owner approval."
   ],
   "common_gates": [
     "usable evidence quality",
@@ -33,6 +48,6 @@
     "human review required",
     "execution_authorized=false"
   ],
-  "evidence_status": "No real sensor integration, accuracy, field validation or certification claimed.",
-  "cost_policy": "standard-library-first; no paid APIs, cloud GPU, model downloads or hardware purchases"
+  "evidence_status": "Shared Core network topology implementation and its CI workflow are merged and passing. AI HOME runtime adoption, real sensor integration, accuracy, field validation and certification are not established.",
+  "cost_policy": "standard-library-first; no paid APIs, cloud GPU, automatic dependency installation, model downloads or hardware purchases"
 }
