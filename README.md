@@ -30,7 +30,7 @@ PUI89 prioritises open-source software, transparent licensing, reproducible work
 - **Purpose:** help residents notice changes, understand evidence and decide when human attention is needed.
 - **Websites:** [English](https://pui89.github.io/home.html) · [ภาษาไทย](https://pui89.github.io/home-th.html) · [PUI89 portfolio](https://pui89.github.io/)
 - **Repository:** [Pui89/AI-Home-Safety-Robot](https://github.com/Pui89/AI-Home-Safety-Robot)
-- **Related product:** [PUI89 AI NOMAD](https://github.com/Pui89/AI-NOMAD) is a separate indoor/outdoor and travel platform.
+- **Related product:** [PUI89 AI NOMAD](https://github.com/Pui89/AI-Mobile-Assistant-Robot) is a separate indoor/outdoor and travel platform.
 
 ![PUI89 AI Home Assistant Robot concept](https://pui89.github.io/images/homeguard-ai-home-concept.svg)
 
@@ -86,9 +86,17 @@ The following documents define the proposed engineering baseline. They are requi
 - [Hardware specification](docs/HARDWARE_SPECIFICATION.md) — component selection criteria and TBD engineering values; research only, no purchasing.
 - [Preliminary internal layout and 8 kg mass budget](docs/AI_HOME_INTERNAL_LAYOUT_AND_MASS_BUDGET.md) — packaging zones, category-level BOM and engineering gates; planning allocations only, not measured weights or selected parts.
 
-## Current progress
+## Development stage
 
-The repository's **28% evidence-based commercial-readiness estimate** is shown in the [daily progress record](#daily-project-progress). It is provisional, not a code-completion percentage, certification or claim that the robot is ready to sell. Planned work and unrun tests do not count as completed evidence.
+**Current stage:** Early software foundation & requirements  
+**ขั้นการพัฒนา:** พื้นฐานซอฟต์แวร์และข้อกำหนดระยะแรก
+
+**Evidence:** Product requirements, architecture, software contracts and early adapter/test foundations are documented.
+
+**Limitations:** No built robot, real sensor integration, certified alarm, or validated home-safety performance is established.
+
+**Next milestone:** Complete a software-only home-safety demonstrator using mock sensor inputs and explicit failure states.
+
 
 ## Website QR codes
 
@@ -117,32 +125,7 @@ The Apache License, Version 2.0 applies **only** to the two source-code files li
 
 See [`LICENSE`](LICENSE), [`LICENSE-SCOPE.md`](LICENSE-SCOPE.md) and [`NOTICE`](NOTICE). Apache-2.0 does not grant permission to use PUI89 trademarks or imply PUI89 endorsement.
 
-<!-- PUI89_DAILY_PROGRESS:START -->
-## Daily project progress
 
-**🟠 28% — Foundation and prototype stage**  
-**Evidence score:** 28/100 · **Review date:** 7 November 2026 (Asia/Bangkok)  
-**Progress graph:** 🟦🟦🟦🟦🟦🟦⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ 28%
-
-This is an evidence-weighted commercial-readiness estimate, not a code-completion percentage, sales forecast, certification, or measured real-world performance. Scores change only when repository evidence is reviewed and the evidence credits below are updated. The daily run refreshes the review date; it never increases the score merely because time has passed.
-
-| Readiness gate | Evidence credit | Visual score |
-|---|---:|---|
-| Purpose & requirements | 8/10 | 🟩🟩🟩🟩🟩🟩🟩🟩⬜⬜ |
-| Architecture & engineering | 8/10 | 🟩🟩🟩🟩🟩🟩🟩🟩⬜⬜ |
-| Working software baseline | 4/15 | 🟩🟩🟩🟩⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ |
-| Reproducible tests & evaluation | 3/15 | 🟩🟩🟩⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ |
-| Integrated product prototype | 0/15 | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ |
-| Safety & real-world validation | 1/15 | 🟩⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ |
-| Licensing & regulatory readiness | 3/10 | 🟩🟩🟩⬜⬜⬜⬜⬜⬜⬜ |
-| Release package & support | 1/10 | 🟩⬜⬜⬜⬜⬜⬜⬜⬜⬜ |
-| **Total** | **28/100** | **🟦🟦🟦🟦🟦🟦⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜** |
-
-**Next milestone:** Improve the lowest-scoring applicable gate with reproducible project-specific evidence. Planned work, concept artwork, unrun tests, synthetic-only results and tool inventories do not earn evidence credit.
-
-**Status boundary:** Software tests and simulations do not establish a built, certified, field-tested or commercially validated physical product. Real-world claims require separate, traceable validation.
-
-<!-- PUI89_DAILY_PROGRESS:END -->
 
 
 ---
