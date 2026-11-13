@@ -99,6 +99,24 @@ The first AI HOME MVP work is being developed as a browser-only demonstrator. It
 
 The demo has configurable example thresholds and normal, warning, stale, disconnected and invalid scenarios. All readings are simulated, session-only and local to the browser. This work does not establish real sensor accuracy, a built robot, certified alarm capability or physical safety performance.
 
+## Perception & Task Intelligence (PTI)
+
+**Role in this product:** support privacy-aware indoor awareness and owner-supervised assistance within a defined home environment. PTI is the shared PUI89 perception-and-task framework; the tasks below are intended capabilities and are not a claim of validated household autonomy.
+
+**Priority perception tasks**
+- Check camera and sensor quality, visibility, freshness and availability before interpreting a scene.
+- Recognise supported rooms, common objects and people within explicitly defined scope.
+- Detect obstacles and changes in the robot's immediate path; estimate distance only with suitable calibrated sensing.
+- Interpret mapped indoor regions and navigable areas when a tested map/localisation stack is available.
+- Fuse camera observations with approved proximity, contact, battery and environmental sensors while preserving source and uncertainty.
+- Report unknown or conflicting conditions, request owner assistance and enter a safe hold when perception or localisation is unreliable.
+
+**Task flow:** OBSERVE → PERCEIVE → ASSESS → DECIDE → RESPOND → LEARN FROM EVIDENCE. Outputs are owner-facing status, alerts and bounded assistance suggestions; they do not establish medical monitoring or unrestricted home autonomy.
+
+**First evidence gate:** recorded indoor scenes and synthetic obstacle cases, followed by supervised tests in a controlled area. Measure obstacle misses, false alarms, localisation loss, safe-stop behaviour, privacy handling and resource use.
+
+**Not established:** reliable household autonomy, medical/fall monitoring, safe operation around children or pets, or validated physical mobility. See the [shared PTI specification](https://github.com/Pui89/PUI89-Shared-AI-Core/blob/main/docs/perception/PUI89_PERCEPTION_TASK_INTELLIGENCE_V1.0.md) (maintainer repository access required).
+
 ## Development stage
 
 **Current stage:** Early software foundation & requirements  
