@@ -38,6 +38,7 @@
     pill.dataset.state = result.state;
     pill.textContent = result.state.toUpperCase() + " · SIMULATED";
     $("explanation").textContent = result.reason;
+    $("action-proposal").textContent = result.actionProposal;
   }
   function applyScenario(key) {
     sample = Core.createScenarioSample(key);
