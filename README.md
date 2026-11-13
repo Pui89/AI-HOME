@@ -86,6 +86,18 @@ The following documents define the proposed engineering baseline. They are requi
 - [Hardware specification](docs/HARDWARE_SPECIFICATION.md) — component selection criteria and TBD engineering values; research only, no purchasing.
 - [Preliminary internal layout and 8 kg mass budget](docs/AI_HOME_INTERNAL_LAYOUT_AND_MASS_BUDGET.md) — packaging zones, category-level BOM and engineering gates; planning allocations only, not measured weights or selected parts.
 
+### Software-only MVP demonstrator
+
+The first AI HOME MVP work is being developed as a browser-only demonstrator. It uses synthetic temperature and humidity values; it is not connected to physical sensors.
+
+- [MVP product specification](docs/MVP_PRODUCT_SPECIFICATION.md)
+- [Sensor integration specification](docs/SENSOR_INTEGRATION_SPECIFICATION.md) — interface and validation requirements; no part selected or purchase approved.
+- [Local dashboard specification](docs/DASHBOARD_SPECIFICATION.md)
+- [Test and validation plan](docs/TEST_AND_VALIDATION_PLAN.md)
+- [Open the local dashboard demo](demo/ai-home-dashboard/index.html) — download or clone the repository and open this HTML file in a modern browser; no installation is required.
+
+The demo has configurable example thresholds and normal, warning, stale, disconnected and invalid scenarios. All readings are simulated, session-only and local to the browser. This work does not establish real sensor accuracy, a built robot, certified alarm capability or physical safety performance.
+
 ## Development stage
 
 **Current stage:** Early software foundation & requirements  
