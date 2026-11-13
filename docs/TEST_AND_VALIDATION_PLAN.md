@@ -32,7 +32,7 @@ After a separately approved sensor is selected: compare readings against a trace
 
 ## 2. Current executable test harness
 
-A dependency-free browser test runner is provided at [`demo/ai-home-dashboard/tests.html`](../demo/ai-home-dashboard/tests.html). It exercises 12 deterministic checks against the same decision core used by the dashboard: normal, high temperature, high humidity, stale, disconnected, invalid, missing sample, reversed thresholds, blank thresholds, out-of-range thresholds, unknown scenario and inclusive boundary values. The test page reports results in the browser. A passing run is evidence only for these software decision-logic cases and must be recorded with the commit, browser and date before claiming the software milestone complete.
+A dependency-free browser test runner is provided at [`demo/ai-home-dashboard/tests.html`](../demo/ai-home-dashboard/tests.html). It exercises 14 deterministic checks against the same decision core used by the dashboard: normal, high temperature, high humidity, stale, disconnected, invalid, missing sample, reversed thresholds, blank thresholds, out-of-range thresholds, human-review proposals for warning and unavailable states, unknown scenario and inclusive boundary values. The test page reports results in the browser. A passing run is evidence only for these software decision-logic cases and must be recorded with the commit, browser and date before claiming the software milestone complete.
 
 ## 3. Evidence record template
 
