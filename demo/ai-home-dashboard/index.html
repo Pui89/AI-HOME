@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <title>PUI89 AI HOME — Local Demonstrator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="shell">
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">PUI89 / PRODUCT 02</p>
+        <h1>AI HOME <span>Environment Console</span></h1>
+        <p class="subhead">Local software demonstrator · synthetic inputs only</p>
+      </div>
+      <div class="demo-flag" role="note">SIMULATED DATA<br><small>NO SENSOR CONNECTED</small></div>
+    </header>
+
+    <section class="notice" aria-label="Safety limitation">
+      <strong>Demonstration only.</strong> Values below are generated examples, not measurements from a home. This tool is not a certified alarm or emergency system. Follow certified-device instructions and local emergency procedures.
+    </section>
+
+    <section class="overview" aria-labelledby="overview-title">
+      <div class="section-heading"><div><p class="eyebrow">LIVE VIEW</p><h2 id="overview-title">Environmental snapshot</h2></div><span id="overall-state" class="state-pill" data-state="normal">NORMAL · SIMULATED</span></div>
+      <div class="metrics">
+        <article class="metric">
+          <div class="metric-label">Temperature</div>
+          <div class="metric-value"><span id="temperature">26.0</span><small>°C</small></div>
+          <p id="temperature-state" class="metric-foot">Connected · simulated</p>
+        </article>
+        <article class="metric">
+          <div class="metric-label">Relative humidity</div>
+          <div class="metric-value"><span id="humidity">55</span><small>%RH</small></div>
+          <p id="humidity-state" class="metric-foot">Connected · simulated</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="panel" aria-labelledby="scenario-title">
+      <div class="section-heading"><div><p class="eyebrow">DEMO CONTROLS</p><h2 id="scenario-title">Choose a test scenario</h2></div></div>
+      <label for="scenario">Simulated input condition</label>
+      <div class="control-row">
+        <select id="scenario">
+          <option value="normal">Normal readings</option>
+          <option value="hot">High temperature</option>
+          <option value="humid">High humidity</option>
+          <option value="stale">Stale temperature sample</option>
+          <option value="disconnected">Temperature sensor disconnected</option>
+          <option value="invalid">Invalid humidity sample</option>
+        </select>
+        <button id="apply-scenario" type="button">Apply scenario</button>
+      </div>
+      <p class="hint">Scenario values are synthetic and intended only to exercise interface behaviour.</p>
+    </section>
+
+    <section class="panel" aria-labelledby="threshold-title">
+      <div class="section-heading"><div><p class="eyebrow">USER SETTINGS</p><h2 id="threshold-title">Demo thresholds</h2></div><button id="reset-thresholds" class="secondary" type="button">Reset defaults</button></div>
+      <div class="threshold-grid">
+        <fieldset><legend>Temperature (°C)</legend><div class="two-inputs"><label>Low <input id="temp-low" type="number" step="0.5" value="18"></label><label>High <input id="temp-high" type="number" step="0.5" value="30"></label></div></fieldset>
+        <fieldset><legend>Humidity (%RH)</legend><div class="two-inputs"><label>Low <input id="humidity-low" type="number" step="1" value="30"></label><label>High <input id="humidity-high" type="number" step="1" value="70"></label></div></fieldset>
+      </div>
+      <div class="control-row"><button id="save-thresholds" type="button">Apply thresholds</button><p id="threshold-message" class="hint" role="status">Defaults are demonstration settings, not safety limits.</p></div>
+    </section>
+
+    <section class="panel" aria-labelledby="health-title">
+      <div class="section-heading"><div><p class="eyebrow">INPUT QUALITY</p><h2 id="health-title">Sensor health</h2></div></div>
+      <div class="health-list">
+        <div><span>Temperature channel</span><strong id="temp-health" class="health-tag">CONNECTED</strong></div>
+        <div><span>Humidity channel</span><strong id="humidity-health" class="health-tag">CONNECTED</strong></div>
+      </div>
+      <p id="explanation" class="explanation" role="status">Both synthetic channels are fresh and within the configured demonstration thresholds.</p>
+    </section>
+
+    <section class="panel" aria-labelledby="log-title">
+      <div class="section-heading"><div><p class="eyebrow">TRACEABILITY</p><h2 id="log-title">Session evidence log</h2></div><button id="clear-log" class="secondary" type="button">Clear log</button></div>
+      <p class="hint">Events are timestamped in this browser session only. Reloading the page clears this log.</p>
+      <ol id="event-log" class="event-log" aria-live="polite"><li>Waiting for first scenario.</li></ol>
+    </section>
+
+    <footer><span>PUI89 · Intelligent Systems. Verifiable Decisions.</span><span>Software-only / no physical validation claimed</span></footer>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
