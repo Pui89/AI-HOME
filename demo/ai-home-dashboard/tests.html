@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <title>PUI89 AI HOME — Software Self-Tests</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .test-summary{padding:14px 16px;border:1px solid var(--line);border-radius:10px;background:#102238;font-weight:800}
+    .test-summary[data-state="pass"]{color:#8ce4bd;border-color:#28765a}
+    .test-summary[data-state="fail"]{color:#ffabb5;border-color:#93434d}
+    .test-results{padding-left:22px;line-height:1.8}
+    .test-results .pass{color:#8ce4bd}.test-results .fail{color:#ffabb5}
+    a{color:var(--cyan)}
+  </style>
+</head>
+<body>
+  <main class="shell">
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">PUI89 / AI HOME</p>
+        <h1>Software <span>Self-Test Runner</span></h1>
+        <p class="subhead">Deterministic browser tests · no packages · no network</p>
+      </div>
+      <div class="demo-flag" role="note">LOCAL TESTS<br><small>SYNTHETIC INPUTS ONLY</small></div>
+    </header>
+    <section class="notice">
+      <strong>Software checks only.</strong> Passing these checks verifies the listed decision-logic cases in this browser. It does not validate sensors, a physical robot, household safety or certified alarms.
+    </section>
+    <section class="panel">
+      <h2>Test result</h2>
+      <p id="test-summary" class="test-summary" role="status">Running checks…</p>
+      <ol id="test-results" class="test-results" aria-live="polite"></ol>
+      <p><a href="index.html">← Return to AI HOME Environment Console</a></p>
+    </section>
+    <footer><span>PUI89 · Intelligent Systems. Verifiable Decisions.</span><span>Re-run by reloading this page</span></footer>
+  </main>
+  <script src="core.js"></script>
+  <script src="tests.js"></script>
+</body>
+</html>

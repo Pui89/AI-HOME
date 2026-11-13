@@ -1,6 +1,6 @@
 # AI HOME Test and Validation Plan
 
-**Status:** Initial software-only plan  
+**Status:** Software-only test plan with a browser-based deterministic self-test runner  
 **Important:** Test completion is not implied by this plan. Results must be recorded separately with date, environment, version and evidence.
 
 ## 1. Test levels
@@ -30,7 +30,11 @@ Simulate missing values, malformed values, delayed timestamps, channel disconnec
 ### D. Future bench validation (not part of this software-only PR)
 After a separately approved sensor is selected: compare readings against a traceable reference instrument over a documented range; test warm-up, drift, repeatability, disconnection, power cycling, timestamp integrity and environmental placement. Record uncertainty and calibration conditions.
 
-## 2. Evidence record template
+## 2. Current executable test harness
+
+A dependency-free browser test runner is provided at [`demo/ai-home-dashboard/tests.html`](../demo/ai-home-dashboard/tests.html). It exercises 14 deterministic checks against the same decision core used by the dashboard: normal, high temperature, high humidity, stale, disconnected, invalid, missing sample, reversed thresholds, blank thresholds, out-of-range thresholds, human-review proposals for warning and unavailable states, unknown scenario and inclusive boundary values. The test page reports results in the browser. A passing run is evidence only for these software decision-logic cases and must be recorded with the commit, browser and date before claiming the software milestone complete.
+
+## 3. Evidence record template
 
 For every completed test, record:
 - test ID and objective;
@@ -43,7 +47,7 @@ For every completed test, record:
 - evidence link or retained artifact;
 - reviewer role and known limitations.
 
-## 3. Exit criteria for software-only milestone
+## 4. Exit criteria for software-only milestone
 
 - All deterministic scenarios behave as specified.
 - Fault states never collapse into Normal.
@@ -52,6 +56,6 @@ For every completed test, record:
 - Safety boundary and simulation label remain visible.
 - Test evidence is reviewed and linked before claiming the milestone complete.
 
-## 4. Explicit non-claims
+## 5. Explicit non-claims
 
 This milestone does not validate sensor accuracy, fire/smoke/CO detection, electrical safety, leak detection, structural condition, robot mobility, battery safety, reliability in a home, or regulatory compliance.

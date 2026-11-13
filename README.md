@@ -94,7 +94,8 @@ The first AI HOME MVP work is being developed as a browser-only demonstrator. It
 - [Sensor integration specification](docs/SENSOR_INTEGRATION_SPECIFICATION.md) — interface and validation requirements; no part selected or purchase approved.
 - [Local dashboard specification](docs/DASHBOARD_SPECIFICATION.md)
 - [Test and validation plan](docs/TEST_AND_VALIDATION_PLAN.md)
-- [Open the local dashboard demo](demo/ai-home-dashboard/index.html) — download or clone the repository and open this HTML file in a modern browser; no installation is required.
+- [Open the local dashboard demo](demo/ai-home-dashboard/index.html) — open this HTML file in a modern browser; no installation is required.
+- [Run the browser-based software self-tests](demo/ai-home-dashboard/tests.html) — execute deterministic decision-core checks locally without packages or network access.
 
 The demo has configurable example thresholds and normal, warning, stale, disconnected and invalid scenarios. All readings are simulated, session-only and local to the browser. This work does not establish real sensor accuracy, a built robot, certified alarm capability or physical safety performance.
 
