@@ -44,11 +44,11 @@
 
   function evaluate(sample, thresholds) {
     if (!sample) {
-      return { state: "unavailable", reason: "No sample is available. No normal-state conclusion is made." };
+      return { state: "unavailable", reason: "No sample is available. No normal-state conclusion is made.", actionProposal: "Select a synthetic test scenario. Do not interpret missing data as a normal condition." };
     }
     const checked = validateThresholds(thresholds || DEFAULT_THRESHOLDS);
     if (!checked.valid) {
-      return { state: "unavailable", reason: "Threshold configuration is invalid: " + checked.reason };
+      return { state: "unavailable", reason: "Threshold configuration is invalid: " + checked.reason, actionProposal: "Review and correct the demonstration thresholds before evaluating readings." };
     }
     const statuses = [
       ["temperature", sample.tempStatus],
@@ -57,20 +57,20 @@
     const unhealthy = statuses.filter((entry) => entry[1] !== "connected");
     if (unhealthy.length) {
       const reasons = unhealthy.map((entry) => entry[0] + " is " + (entry[1] || "unknown"));
-      return { state: "unavailable", reason: "Required evidence unavailable: " + reasons.join("; ") + ". No normal-state conclusion is made." };
+      return { state: "unavailable", reason: "Required evidence unavailable: " + reasons.join("; ") + ". No normal-state conclusion is made.", actionProposal: "Check the affected input channel and obtain a fresh, valid reading. Do not infer that conditions are normal." };
     }
     if (typeof sample.temperature !== "number" || !Number.isFinite(sample.temperature) ||
         typeof sample.humidity !== "number" || !Number.isFinite(sample.humidity)) {
-      return { state: "unavailable", reason: "A connected channel supplied an invalid value. No normal-state conclusion is made." };
+      return { state: "unavailable", reason: "A connected channel supplied an invalid value. No normal-state conclusion is made.", actionProposal: "Inspect the invalid sample and verify it independently before relying on the display." };
     }
     const t = checked.values;
     const reasons = [];
     if (sample.temperature < t.tempLow || sample.temperature > t.tempHigh) reasons.push("temperature outside configured range");
     if (sample.humidity < t.humidityLow || sample.humidity > t.humidityHigh) reasons.push("humidity outside configured range");
     if (reasons.length) {
-      return { state: "warning", reason: "Threshold warning: " + reasons.join("; ") + ". This is not a diagnosis." };
+      return { state: "warning", reason: "Threshold warning: " + reasons.join("; ") + ". This is not a diagnosis.", actionProposal: "Review the indicated value and verify it with a suitable independent instrument. Human decision required." };
     }
-    return { state: "normal", reason: "Both synthetic channels are connected and within the configured demonstration thresholds." };
+    return { state: "normal", reason: "Both synthetic channels are connected and within the configured demonstration thresholds.", actionProposal: "No configured threshold exception appears in this synthetic sample. Human review is still required." };
   }
 
   globalThis.Pui89HomeCore = Object.freeze({
