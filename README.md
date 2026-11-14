@@ -32,7 +32,9 @@ PUI89 prioritises open-source software, transparent licensing, reproducible work
 - **Repository:** [Pui89/AI-Home-Safety-Robot](https://github.com/Pui89/AI-Home-Safety-Robot)
 - **Related product:** [PUI89 AI NOMAD](https://github.com/Pui89/AI-Mobile-Assistant-Robot) is a separate indoor/outdoor and travel platform.
 
-![PUI89 AI HOME — revised compact four-wheel indoor concept](docs/images/ai-home-compact-four-wheel.svg)
+![PUI89 AI HOME — compact low-profile indoor four-wheel assistant concept](docs/images/ai-home-compact-four-wheel.svg)
+
+*Concept illustration built as an embedded SVG. Proposed design only; physical construction and validation remain pending.*
 
 ## Compact physical design target — AI HOME
 
