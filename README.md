@@ -90,7 +90,7 @@ The following documents define the proposed engineering baseline. They are requi
 - [Safety and cybersecurity requirements](docs/SAFETY_AND_CYBERSECURITY_REQUIREMENTS.md) — safety gates, privacy and security controls.
 - [Verification and validation plan](docs/VERIFICATION_AND_VALIDATION_PLAN.md) — software, simulation, bench and supervised test stages.
 - [Hardware specification](docs/HARDWARE_SPECIFICATION.md) — component selection criteria and TBD engineering values; research only, no purchasing.
-- [Preliminary internal layout and 8 kg mass budget](docs/AI_HOME_INTERNAL_LAYOUT_AND_MASS_BUDGET.md) — packaging zones, category-level BOM and engineering gates; planning allocations only, not measured weights or selected parts.
+- [Preliminary internal layout and 4–6 kg target mass plan](docs/AI_HOME_INTERNAL_LAYOUT_AND_MASS_BUDGET.md) — packaging zones, category-level BOM and engineering gates; planning allocations only, not measured weights or selected parts.
 
 ### Software-only MVP demonstrator
 
@@ -222,7 +222,7 @@ This project adopts PUI89 Engineering Intelligence to connect indoor perception,
 **Product-specific design priorities**
 - **Indoor mobility:** study footprint, turning radius, wheelbase, threshold crossing, floor transitions, carpet interaction, slope limits and low-speed stability.
 - **Human-safe structure:** rounded external geometry, pinch/entrapment avoidance, compliant contact surfaces, guarded moving parts and accessible emergency stop.
-- **Payload and manipulation:** keep the current 8 kg target and 10 kg maximum as unvalidated design targets; assess centre of mass, tip-over margin, braking distance, payload retention and safe handling separately.
+- **Payload and manipulation:** target a 4–6 kg complete robot mass and retain 10 kg only as the maximum design ceiling; assess centre of mass, tip-over margin, braking distance, payload retention and safe handling separately.
 - **Home-environment awareness:** detect people, pets, furniture, stairs, cables, spills and temporary obstacles with uncertainty-aware stop/slow/ask behaviour.
 - **Power and thermal design:** assess battery protection, charging safety, runtime estimation, thermal monitoring, serviceability and graceful low-power shutdown.
 - **Privacy by design:** local-first processing where feasible, clear camera/microphone states, data minimisation and user-controlled retention.
