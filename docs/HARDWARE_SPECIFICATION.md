@@ -22,7 +22,11 @@ The 10 kg value is a design ceiling, not a target operating mass. The payload is
 Do not publish a waterproof, fireproof, stair-safe, child-safe or pet-safe claim without relevant test evidence and independent review.
 
 
-## 2. Subsystem selection checklist
+## 2. Preliminary supplier and cost research
+
+See [PRELIMINARY_COMPONENT_SOURCING_AND_THAILAND_COSTS.md](PRELIMINARY_COMPONENT_SOURCING_AND_THAILAND_COSTS.md) for dated public price snapshots, candidate suppliers in Thailand, the confirmed Chinese-origin motor rejection, cost-reduction options and the evidence required before approving any part. No candidate is approved by appearing in that report.
+
+## 3. Subsystem selection checklist
 
 | Subsystem | Selection criteria | Evidence required before approval |
 |---|---|---|
