@@ -231,3 +231,8 @@ This project adopts PUI89 Engineering Intelligence to connect indoor perception,
 **AI engineering methods to evaluate:** visual/depth perception, semantic mapping, obstacle tracking, human/pet-aware scene understanding, task planning, voice/interface intelligence, anomaly detection, energy scheduling and indoor digital-twin simulation.
 
 **Evidence gates:** accessible indoor dataset and task definitions → simulation and safety scenarios → stationary perception tests → supervised low-speed mobility tests → payload/stability and electrical safety review → controlled home pilot. Physical autonomy, manipulation and safety remain unvalidated until independently tested.
+
+
+## Preliminary hardware sourcing
+
+**Current research:** [Preliminary component sourcing and Thailand cost review](docs/PRELIMINARY_COMPONENT_SOURCING_AND_THAILAND_COSTS.md). Public price snapshots are estimates; origin and engineering compatibility remain subject to verification.
