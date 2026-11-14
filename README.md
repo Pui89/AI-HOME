@@ -111,6 +111,28 @@ The demo has configurable example thresholds and normal, warning, stale, disconn
 
 PUI89 uses a traceable sourcing workflow for materials, mechanical parts, sensors, compute, power and control components. See the [bilingual Hardware & Materials Sourcing guide](https://pui89.github.io/materials.html) for the process covering exact manufacturer/model identification, Thailand and international supplier discovery, country-of-origin evidence, dated pricing and availability, lead times, shipping, compatibility checks and verification gates. Product-specific candidates are added only when supported by evidence; research candidates are not purchases or validated hardware.
 
+### Prototype materials & cost snapshot
+
+**Planning allowance for one research prototype: ฿29,000–90,500.** This is a preliminary estimate from the [PUI89 project-specific BOM](https://pui89.github.io/materials.html#project-boms), not a supplier quotation or verified current market price.
+
+Indoor four-wheel home assistant; 8 kg target design mass and 10 kg maximum design mass.
+
+| Main item | Prototype quantity | Purpose |
+|---|---:|---|
+| Lightweight chassis/body | 1 set | Frame and enclosure |
+| Encoder drive motors + caster wheels | 2 + 2 | Differential drive and support |
+| RGB-D camera | 1 shared | Depth perception |
+| 2D LiDAR | 1 | Indoor navigation research |
+| IMU + bumper switches | 1 + 4 | Motion and contact detection |
+| Battery/BMS/protection | 1 set | Protected power |
+| Compute/controller | 1 set | Reuse shared compute where suitable |
+
+**Special engineering / purchase gate:** Keep the design indoors and owner-supervised. Verify total mass, wheel guarding, pinch points, emergency stop, battery protection, obstacle sensing and safe docking before any mobile prototype test. The 8 kg and 10 kg figures are design targets, not measured results.
+
+**Shared engineering bench (tracked separately):** approximately ฿16,500–46,000 if the existing development computer is reused. This is a portfolio-level allowance for reusable compute, one RGB-D camera, bench power supply/multimeter, two microcontroller boards and reusable tools/wiring/adapters; it is not added to each project total. Allocate each shared item once, not once per product.
+
+**Cost status:** exact manufacturer/model, manufacturing origin, supplier, stock, lead time and dated prices remain to be verified. Freight, insurance, duty, VAT, brokerage, local delivery, custom fabrication labour and certification are not priced here; calculate Thai landed cost only from dated quotations. Quantities are for one prototype; no purchase or supplier commitment is authorised. Software-first work can continue with available computing and appropriately licensed open-source tools before hardware procurement.
+
 ## Perception & Task Intelligence (PTI)
 
 **Role in this product:** support privacy-aware indoor awareness and owner-supervised assistance within a defined home environment. PTI is the shared PUI89 perception-and-task framework; the tasks below are intended capabilities and are not a claim of validated household autonomy.
