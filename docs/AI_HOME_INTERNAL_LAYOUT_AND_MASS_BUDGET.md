@@ -1,84 +1,83 @@
-# PUI89 AI HOME — Preliminary Internal Layout and 8 kg Mass Budget
+# PUI89 AI HOME — Compact Layout and 4–6 kg Target Mass Plan
 
 **Status:** Preliminary design study only. No components are selected, purchased, assembled, weighed or validated.  
-**Design envelope:** 25 cm wide × 25 cm deep × 40 cm high, including fixed external features and wheels.  
-**Complete mass ceiling:** 8.00 kg maximum, including battery and all installed parts.  
+**Revised design envelope:** 25–28 cm wide × 30–33 cm deep × 30–35 cm high, including wheels and fixed external features.  
+**Complete robot mass target:** 4–6 kg, including battery and all installed parts.  
+**Maximum design ceiling:** 10 kg; this is not the desired build mass.  
+**Initial payload target:** 1–2 kg, additional to robot mass and subject to validation.  
 **Use:** Indoor residential concept; supervised movement only if a mobility prototype is later developed.
 
 ## 1. Design rules
 
-1. The complete assembled unit must remain within 250 × 250 × 400 mm and 8.00 kg.
-2. The mass ceiling includes chassis, enclosure, wheels, motors, battery/BMS, computer, sensors, displays, wiring, connectors, fasteners and protective parts.
-3. The values below are planning allocations, not measured component weights or a bill of selected parts.
-4. No part number, supplier, price, certification, runtime, speed, payload or protection rating is approved by this document.
-5. If a real component exceeds its allocation, redesign or remove non-essential features; do not silently increase the 8 kg ceiling.
-6. Keep heavy parts low and near the centreline; do not place the battery high in the sensor section.
+1. Design toward a complete robot mass of 4–6 kg; do not treat the 10 kg maximum design ceiling as the target.
+2. The complete robot mass includes chassis, enclosure, wheels, motors, battery/BMS, computer, sensors, wiring, connectors, fasteners, guards and all installed accessories.
+3. Payload is separate from robot mass and must be included in stability, wheel-load, torque, braking and runtime calculations.
+4. No component mass, supplier, price, certification, runtime, speed, payload capability or protection rating is approved by this document.
+5. Do not invent subsystem mass allocations before candidate components and mechanical architecture are selected. Record each candidate's datasheet mass and later measure the physical part.
+6. Keep heavy components low and near the centreline. Avoid top-heavy sensor towers and unnecessary displays, duplicate controllers, oversized motors or decorative structure.
 7. Certified household smoke/fire/CO/electrical protection remains primary. AI HOME must not control locks, breakers, valves, appliances or certified alarms.
 
-## 2. Preliminary vertical layout
+## 2. Preliminary packaging envelope
 
-The 40 cm height is the complete external envelope. The zones are packaging concepts and may overlap after detailed CAD and component selection.
+| Parameter | Proposed range | CAD envelope for initial fit check |
+|---|---:|---:|
+| Width | 250–280 mm | 280 mm maximum |
+| Length / depth | 300–330 mm | 330 mm maximum |
+| Height | 300–350 mm | 350 mm maximum |
 
-| Vertical zone (from floor) | Proposed contents | Layout intent |
-|---|---|---|
-| 0–8 cm | Wheel/drive envelope, guarded moving parts, low base structure | Keep moving parts protected; preserve floor clearance and safe stopping |
-| 8–17 cm | Battery with suitable enclosure/BMS, power protection | Place the heaviest subsystem low and close to the centre |
-| 17–27 cm | Compute/control board, power conversion, cable routing | Accessible service area; separate heat sources from sensors and battery |
-| 27–35 cm | Environmental sensor boards, air paths, status indicators | Avoid blocked vents; sensor placement must match each datasheet |
-| 35–40 cm | Fixed upper sensor/camera/audio interface, if selected | Minimise top mass; privacy-by-design and no unnecessary recording |
+The envelope includes wheels, fixed sensor housing, guards and permanent external features. Internal zones are not frozen until a CAD layout and exact component dimensions are available.
 
-**Horizontal packaging:** reserve a central protected electronics volume inside the 250 × 250 mm footprint. Wheel sweep, caster swivel, cable bend radius, ventilation, connector access and enclosure wall thickness must be included in CAD; nominal footprint alone does not prove fit.
+**Packaging priorities**
+- Base: protected wheel/drive arrangement, low centre of gravity and safe floor clearance.
+- Lower central zone: battery enclosure, BMS and power protection.
+- Middle zone: compute/control electronics and serviceable wiring.
+- Upper zone: only the sensors and indicators required for the first product task.
+- Reserve ventilation, cable bend radius, connector access, wheel sweep and maintenance clearance.
 
-**Mobility architecture:** four-wheel indoor concept only. A candidate arrangement is two powered drive wheels plus two passive support wheels, but wheel type, drive arrangement, motor count and geometry remain TBD pending torque, stability, floor-transition and stopping calculations. Do not treat this candidate as selected hardware.
+A candidate two-powered-wheel plus two-support-wheel layout may be evaluated, but no drive arrangement is selected. Motor count and wheel geometry remain TBD pending torque, stability, floor-transition and stopping calculations.
 
-## 3. Preliminary mass budget
+## 3. Component-level mass ledger — required before design freeze
 
-| Subsystem allocation | Planning allowance |
-|---|---:|
-| Chassis and structural frame | 0.90 kg |
-| Outer enclosure and access panels | 0.55 kg |
-| Wheels, motors and mechanical drive | 1.25 kg |
-| Battery and battery management/protection | 1.10 kg |
-| Compute and control electronics | 0.55 kg |
-| Environmental sensors and sensor mounts | 0.70 kg |
-| Power conversion, fusing and electrical protection | 0.40 kg |
-| Wiring, connectors and strain relief | 0.25 kg |
-| User interface, indicators and audio (if retained) | 0.35 kg |
-| Thermal management and ventilation parts | 0.25 kg |
-| Fasteners, guards and service hardware | 0.45 kg |
-| **Subtotal planning allocation** | **6.75 kg** |
-| **Unallocated design margin** | **1.25 kg** |
-| **Maximum complete mass** | **8.00 kg** |
+No unsupported per-subsystem allocations are assigned at this stage. Populate this table from official manufacturer datasheets, supplier documentation and physical weighing.
 
-The 1.25 kg margin is not permission to add optional hardware automatically. It is reserved for component variance, wiring, mounts, tolerances and design changes. The budget must be replaced by a component-by-component measured mass ledger before design freeze. Each row must eventually list exact manufacturer/model, quantity, datasheet/source, individual mass, measured mass, mounting mass and status.
+| Subsystem / item | Manufacturer and exact model | Quantity | Datasheet mass (g) | Measured mass (g) | Mounts / wiring allowance (g) | Evidence / status |
+|---|---|---:|---:|---:|---:|---|
+| Chassis and frame | TBD | TBD | TBD | TBD | TBD | Pending |
+| Enclosure and access panels | TBD | TBD | TBD | TBD | TBD | Pending |
+| Wheels, motors and drive | TBD | TBD | TBD | TBD | TBD | Pending |
+| Battery, BMS and containment | TBD | TBD | TBD | TBD | TBD | Pending |
+| Compute and control electronics | TBD | TBD | TBD | TBD | TBD | Pending |
+| Sensors and mounts | TBD | TBD | TBD | TBD | TBD | Pending |
+| Power conversion, fuses and protection | TBD | TBD | TBD | TBD | TBD | Pending |
+| Wiring, connectors and strain relief | TBD | TBD | TBD | TBD | TBD | Pending |
+| Guards, fasteners and service parts | TBD | TBD | TBD | TBD | TBD | Pending |
+| **Complete robot mass** |  |  | **TBD** | **TBD** | **TBD** | Must target 4–6 kg; must not exceed 10 kg ceiling |
 
-## 4. Preliminary bill of materials (BOM) — categories only
+Do not declare the target achieved from estimates alone. Report the measured assembled mass, scale resolution, configuration, battery state and included accessories.
 
-| BOM group | Planning quantity | Required evidence before selection |
-|---|---:|---|
-| Chassis/frame and enclosure | 1 assembly | CAD, material datasheets, strength/stability review, mass |
-| Wheels and drive units | TBD | Official motor/wheel datasheets, torque/speed/braking calculations, guarding |
-| Battery pack and BMS | 1 system | Cell provenance, official datasheets, protection design, charging and thermal review |
-| Compute/control unit | 1 system | Exact model, supported software, measured power/RAM/storage, licence |
-| Temperature/humidity sensing | TBD | Range, accuracy, drift, calibration and placement data |
-| Water/moisture sensing | TBD | Detection principle, coverage, false-alarm and repeatability test |
-| Smoke/fire status interface | Optional; independent certified alarm remains primary | Manufacturer-approved interface and isolation review; no alarm control |
-| Air/environment sensing | TBD | Exact target measurands, datasheet, calibration and cross-sensitivity review |
-| Visual/context sensor | Optional | Privacy assessment, field of view, local processing and data-retention controls |
-| Power conversion and protection | TBD | Voltage/current budget, fuse/protection calculations, component ratings |
-| Wiring/connectors | TBD | Current rating, insulation, strain relief, temperature and service ratings |
-| Indicators/audio/display | Optional | Accessibility, power budget and user-control review |
-| Thermal/ventilation parts | TBD | Thermal model, airflow path, dust/ingress trade-off and bench evidence |
-| Fasteners, seals and guards | TBD | Material/grade, retention, serviceability and inspection |
+## 4. Preliminary BOM categories
+
+| BOM group | Required evidence before selection |
+|---|---|
+| Chassis/frame and enclosure | CAD, material datasheets, strength/stability review, mass and manufacturing method |
+| Wheels and drive units | Official datasheets, torque/speed/braking calculations, guarded moving parts and mass |
+| Battery pack and BMS | Cell provenance, official datasheets, protection design, charging and thermal review, complete mass |
+| Compute/control unit | Exact model, supported software, measured power/RAM/storage, licence and mass |
+| Environmental sensors | Measurement range, accuracy, drift, calibration and placement data |
+| Power conversion and protection | Voltage/current budget, fuse/protection calculations and component ratings |
+| Wiring/connectors | Current rating, insulation, strain relief, temperature and service ratings |
+| Fasteners, seals and guards | Material/grade, retention, serviceability, inspection and mass |
 
 No purchases, supplier contact, account creation, trials, package installations or paid services are authorised. Research must use official, freely accessible manufacturer documentation where available; country of origin, licence, ongoing cost and safety approvals require separate review.
 
 ## 5. Engineering gates before design freeze
 
-- [ ] CAD proves the complete external envelope is at most 250 × 250 × 400 mm.
-- [ ] Component-level mass ledger, including fasteners and cables, totals at most 8.00 kg.
+- [ ] CAD proves the complete external envelope is within 280 × 330 × 350 mm.
+- [ ] Component-level mass ledger targets 4–6 kg and the complete robot remains at or below 10 kg.
+- [ ] Physical weighing confirms the assembled mass; estimates are not reported as measurements.
 - [ ] Centre-of-gravity and tip-resistance analysis covers turns, slopes and emergency stops.
 - [ ] Drive torque, speed, wheel loading, stopping distance and floor-transition limits are calculated.
+- [ ] The 1–2 kg initial payload target is validated separately from robot mass.
 - [ ] Battery energy, peak/continuous current, BMS, charging and thermal limits are documented.
 - [ ] Electrical protection, fuse sizing, connector ratings and wiring diagram are reviewed.
 - [ ] Sensor placement, coverage, blind spots, calibration and environmental limits are documented.
@@ -88,8 +87,8 @@ No purchases, supplier contact, account creation, trials, package installations 
 
 ## 6. Explicit limitations
 
-This document does not establish that a 25 × 25 × 40 cm, 8 kg product is mechanically feasible. It does not establish a prototype, selected components, real sensor integration, runtime, navigation performance, waterproofing, fire resistance, IP rating, certified alarm function or safety certification. Stair climbing and rough-terrain operation are out of scope. Unknown values remain TBD.
+This document does not establish that the proposed compact envelope, 4–6 kg target or 1–2 kg payload is mechanically feasible. It does not establish a prototype, selected components, real sensor integration, runtime, navigation performance, waterproofing, fire resistance, IP rating, certified alarm function or safety certification. Stair climbing and outdoor terrain operation are out of scope. Unknown values remain TBD.
 
 ## 7. Review record
 
-Update this document only with traceable sources and evidence. Record revision, reviewer, exact changed values, supporting datasheets/calculations and unresolved risks. Never convert a planning allocation into a measured result without weighing the actual part.
+Record revisions, reviewers, exact changed values, supporting datasheets/calculations, physical weighing records and unresolved risks. Never convert a planning target or supplier-listed mass into a measured result without weighing the actual installed part.
