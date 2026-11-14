@@ -208,3 +208,20 @@ The portfolio-wide count is published on the [PUI89 website](https://pui89.githu
 
 จะนับเมื่อมีสถานะเสร็จสมบูรณ์ วันที่ ขอบเขต บทบาทผู้ทบทวน ผลการทบทวน และหลักฐานอ้างอิงอย่างน้อยหนึ่งรายการครบถ้วนเท่านั้น รายการร่าง คะแนน ดาว ยอดเข้าชม และความคิดเห็นจะไม่นับ
 <!-- PUI89_EVIDENCE_BACKED_REVIEW:END -->
+
+## AI Engineering Intelligence & Home-Robot Design
+
+This project adopts PUI89 Engineering Intelligence to connect indoor perception, task planning, mechanical packaging, energy use, reliability and human-centred safety. The AI layer proposes and explains tasks; independent hardware safeguards and human authority remain essential.
+
+**Product-specific design priorities**
+- **Indoor mobility:** study footprint, turning radius, wheelbase, threshold crossing, floor transitions, carpet interaction, slope limits and low-speed stability.
+- **Human-safe structure:** rounded external geometry, pinch/entrapment avoidance, compliant contact surfaces, guarded moving parts and accessible emergency stop.
+- **Payload and manipulation:** keep the current 8 kg target and 10 kg maximum as unvalidated design targets; assess centre of mass, tip-over margin, braking distance, payload retention and safe handling separately.
+- **Home-environment awareness:** detect people, pets, furniture, stairs, cables, spills and temporary obstacles with uncertainty-aware stop/slow/ask behaviour.
+- **Power and thermal design:** assess battery protection, charging safety, runtime estimation, thermal monitoring, serviceability and graceful low-power shutdown.
+- **Privacy by design:** local-first processing where feasible, clear camera/microphone states, data minimisation and user-controlled retention.
+- **Environmental boundary:** design for indoor dust, spills and cleaning exposure; do not imply flood immersion or outdoor weather capability.
+
+**AI engineering methods to evaluate:** visual/depth perception, semantic mapping, obstacle tracking, human/pet-aware scene understanding, task planning, voice/interface intelligence, anomaly detection, energy scheduling and indoor digital-twin simulation.
+
+**Evidence gates:** accessible indoor dataset and task definitions → simulation and safety scenarios → stationary perception tests → supervised low-speed mobility tests → payload/stability and electrical safety review → controlled home pilot. Physical autonomy, manipulation and safety remain unvalidated until independently tested.
