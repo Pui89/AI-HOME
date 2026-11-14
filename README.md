@@ -16,7 +16,7 @@ PUI89 prioritises open-source software, transparent licensing, reproducible work
 > 
 > **Project:** PUI89 AI Home Assistant Robot  
 > **Focus:** Indoor home-assistant robot concept and home-safety software platform  
-> **Development stage:** Early software foundation and product requirements; no completed robot or real sensor integration is established.
+> **Development stage:** Initial Stage 2 indoor-perception decision layer added; no completed robot, live camera input or real sensor integration is established.
 > 
 > **Project website:** [English](https://pui89.github.io/home.html) · [ภาษาไทย](https://pui89.github.io/home-th.html) · [PUI89 portfolio](https://pui89.github.io/)
 > 
@@ -90,7 +90,7 @@ The following documents define the proposed engineering baseline. They are requi
 - [Safety and cybersecurity requirements](docs/SAFETY_AND_CYBERSECURITY_REQUIREMENTS.md) — safety gates, privacy and security controls.
 - [Verification and validation plan](docs/VERIFICATION_AND_VALIDATION_PLAN.md) — software, simulation, bench and supervised test stages.
 - [Hardware specification](docs/HARDWARE_SPECIFICATION.md) — component selection criteria and TBD engineering values; research only, no purchasing.
-- [Preliminary internal layout and 4–6 kg target mass plan](docs/AI_HOME_INTERNAL_LAYOUT_AND_MASS_BUDGET.md) — packaging zones, category-level BOM and engineering gates; planning allocations only, not measured weights or selected parts.
+- [Preliminary internal layout and 4–6 kg target mass plan](docs/AI_HOME_INTERNAL_LAYOUT_AND_MASS_BUDGET.md) — packaging zones, category-level BOM and engineering gates; planning allocations only, not measured weights or selected parts.\n- [Indoor Perception MVP](docs/INDOOR_PERCEPTION_MVP.md) — initial deterministic CPU-first decision layer, conservative safe-hold logic and repeatable unit tests; no vision model or hardware integration is claimed.
 
 ### Software-only MVP demonstrator
 
