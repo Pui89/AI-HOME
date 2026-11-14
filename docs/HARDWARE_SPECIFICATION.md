@@ -7,9 +7,9 @@
 | Item | Revised target | Evidence status |
 |---|---|---|
 | Platform | Four-wheel indoor mobile assistant | Concept only |
-| Complete robot mass | **4–6 kg target**, including battery; **10 kg maximum design ceiling** | Proposed; not measured |
+| Complete robot mass | **5 kg preferred target; 4–6 kg design range; 6 kg hard ceiling**, including battery and all installed hardware | Proposed; not measured |
 | Dimensions | **25–28 cm W × 30–33 cm D × 30–35 cm H**, complete external envelope including wheels and fixed sensor housing | Proposed; not measured |
-| Initial payload | **1–2 kg** | Proposed; not load-tested |
+| Initial payload | **1 kg initial target; 2 kg stretch target** | Proposed; not load-tested |
 | Speed and acceleration | Not yet specified; low-speed supervised movement is the design intent | TBD |
 | Turning radius and floor clearance | Not yet specified | TBD |
 | Runtime and charging time | Not yet specified | TBD |
@@ -17,7 +17,7 @@
 | Water-ingress and dust protection | Rating to be selected from hazard analysis and verified test requirements | TBD |
 | Fire/heat performance | Must be based on verified component/material ratings and system-level hazard review | TBD |
 
-The 10 kg value is a design ceiling, not a target operating mass. The payload is additional to the robot's own complete mass and must be included in mobility, stability and braking calculations.
+The 6 kg value is the hard ceiling for the complete robot itself, including battery and all installed hardware. Payload is additional: use 1 kg as the initial design case and treat 2 kg as a stretch case requiring separate mobility, stability, wheel-load, braking and runtime validation.
 
 Do not publish a waterproof, fireproof, stair-safe, child-safe or pet-safe claim without relevant test evidence and independent review.
 
