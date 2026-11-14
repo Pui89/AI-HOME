@@ -36,22 +36,28 @@ PUI89 prioritises open-source software, transparent licensing, reproducible work
 
 ## Compact physical design target — AI HOME
 
-The current proposed compact form factor is:
+The revised compact form factor is a **proposed design target**, subject to CAD, component selection and physical validation.
 
-| Parameter | Design target |
+| Parameter | Revised target |
 |---|---:|
-| Width (W) | **25 cm** |
-| Length / depth (D) | **25 cm** |
-| Height (H) | **40 cm** |
-| Maximum total mass | **8 kg**, including the battery |
+| Width (W) | **25–28 cm** |
+| Length / depth (D) | **30–33 cm** |
+| Height (H) | **30–35 cm** |
+| Complete robot mass | **4–6 kg target**, including battery |
+| Maximum design allowance | **10 kg ceiling**, not a desired build weight |
+| Initial payload target | **1–2 kg**, subject to stability and drive testing |
+| Mobility | Four wheels; indoor use |
 
-These are **provisional design targets**, not measured prototype specifications. The dimensions describe the intended external envelope of the assembled unit, including its wheels and fixed sensor housing. The 8 kg limit includes the battery, chassis, wheels, motors, electronics, sensors, wiring and enclosure.
+The external dimensions include the wheels, fixed sensor housing and all permanent external features. Robot mass includes the chassis, enclosure, wheels, motors, battery/BMS, computer, sensors, wiring, connectors, fasteners and guards; payload is accounted for separately.
 
-**Design intent:** a compact, stable, four-wheel indoor assistant that can fit into a small home while carrying its sensing and computing equipment. Keep heavier components low in the chassis, protect wheels and moving parts, provide adequate ventilation and service access, and avoid sharp external edges. HOME remains an indoor home-condition awareness product; AI NOMAD is the separate portable travel/outdoor assistant.
+**Design intent:** a small, low-profile indoor assistant. Keep the battery and other heavy components low and near the centreline. Prioritise a short wheelbase, protected wheels, stable turns, safe stopping, service access and adequate ventilation. Do not add optional displays, audio or sensors unless their function justifies their mass, power and cost.
 
-**Engineering checks required before freezing the design:** verify the complete mass budget against selected components; centre of gravity and tip resistance; wheel clearance and floor transitions; obstacle and collision behaviour; cable snagging; thermal management and ventilation; battery containment and charging safety; acoustic performance; cleaning and maintenance access; and safe supervised stopping. The 25 × 25 × 40 cm envelope and 8 kg limit must be checked against the actual sensor layout and enclosure.
+**Mass-reduction strategy:** use a lightweight but adequately stiff frame; consolidate compute/control electronics where technically appropriate; choose motors from calculated wheel torque and duty cycle rather than oversizing; minimise brackets, fasteners and duplicated housings; use appropriately rated lightweight enclosure materials; and maintain a component-level mass ledger. Do not reduce battery protection, electrical protection, wheel guarding or structural safety to meet the target.
 
-**Capability boundary:** this target does not imply stair climbing, operation on rough terrain, water resistance, fire resistance, an IP rating, certified alarm capability, or validated safety performance. Certified household protection devices remain primary. No prototype dimensions, measured mass or physical validation are currently established by this design target.
+**Engineering checks before design freeze:** verify the complete external envelope in CAD; weigh every selected component and the assembled robot; calculate centre of gravity and tip resistance; validate the 1–2 kg payload target, wheel loading, floor transitions, stopping distance, battery containment/charging, thermal behaviour, ventilation, acoustic performance and maintenance access.
+
+**Status: PROPOSED / NOT MEASURED / NOT VALIDATED.** The 4–6 kg target and dimensions are not demonstrated by a physical prototype. The 10 kg value is a maximum design ceiling, not the expected mass. No stair climbing, outdoor terrain capability, waterproofing, fire resistance, IP rating or certified safety performance is claimed.
+
 
 ## What it is designed to monitor
 
