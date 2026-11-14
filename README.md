@@ -99,6 +99,10 @@ The first AI HOME MVP work is being developed as a browser-only demonstrator. It
 
 The demo has configurable example thresholds and normal, warning, stale, disconnected and invalid scenarios. All readings are simulated, session-only and local to the browser. This work does not establish real sensor accuracy, a built robot, certified alarm capability or physical safety performance.
 
+## Hardware & Materials Sourcing
+
+PUI89 uses a traceable sourcing workflow for materials, mechanical parts, sensors, compute, power and control components. See the [bilingual Hardware & Materials Sourcing guide](https://pui89.github.io/materials.html) for the process covering exact manufacturer/model identification, Thailand and international supplier discovery, country-of-origin evidence, dated pricing and availability, lead times, shipping, compatibility checks and verification gates. Product-specific candidates are added only when supported by evidence; research candidates are not purchases or validated hardware.
+
 ## Perception & Task Intelligence (PTI)
 
 **Role in this product:** support privacy-aware indoor awareness and owner-supervised assistance within a defined home environment. PTI is the shared PUI89 perception-and-task framework; the tasks below are intended capabilities and are not a claim of validated household autonomy.
