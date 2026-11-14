@@ -4,21 +4,29 @@
 
 ## 1. Current design targets
 
-| Item | Current target | Evidence status |
+| Item | Revised target | Evidence status |
 |---|---|---|
 | Platform | Four-wheel indoor mobile assistant | Concept only |
-| Complete mass | **8.00 kg maximum**, including battery, sensors, computer, chassis, wheels, wiring, enclosure and accessories | Proposed ceiling; not measured |
-| Dimensions | **25 cm W × 25 cm D × 40 cm H**, complete external envelope including wheels and fixed sensor housing | Proposed; not measured |
+| Complete robot mass | **4–6 kg target**, including battery; **10 kg maximum design ceiling** | Proposed; not measured |
+| Dimensions | **25–28 cm W × 30–33 cm D × 30–35 cm H**, complete external envelope including wheels and fixed sensor housing | Proposed; not measured |
+| Initial payload | **1–2 kg** | Proposed; not load-tested |
 | Speed and acceleration | Not yet specified; low-speed supervised movement is the design intent | TBD |
 | Turning radius and floor clearance | Not yet specified | TBD |
 | Runtime and charging time | Not yet specified | TBD |
-| Payload and stability | Not yet specified | TBD |
+| Payload stability and stopping | Not yet specified; must be validated with the intended load | TBD |
 | Water-ingress and dust protection | Rating to be selected from hazard analysis and verified test requirements | TBD |
 | Fire/heat performance | Must be based on verified component/material ratings and system-level hazard review | TBD |
 
+The 10 kg value is a design ceiling, not a target operating mass. The payload is additional to the robot's own complete mass and must be included in mobility, stability and braking calculations.
+
 Do not publish a waterproof, fireproof, stair-safe, child-safe or pet-safe claim without relevant test evidence and independent review.
 
-## 2. Subsystem selection checklist
+
+## 2. Preliminary supplier and cost research
+
+See [PRELIMINARY_COMPONENT_SOURCING_AND_THAILAND_COSTS.md](PRELIMINARY_COMPONENT_SOURCING_AND_THAILAND_COSTS.md) for dated public price snapshots, candidate suppliers in Thailand, the confirmed Chinese-origin motor rejection, cost-reduction options and the evidence required before approving any part. No candidate is approved by appearing in that report.
+
+## 3. Subsystem selection checklist
 
 | Subsystem | Selection criteria | Evidence required before approval |
 |---|---|---|
