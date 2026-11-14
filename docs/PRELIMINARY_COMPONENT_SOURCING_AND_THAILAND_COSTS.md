@@ -6,9 +6,9 @@
 ## 1. Revised product targets
 
 - External envelope: 250–280 mm W × 300–330 mm D × 300–350 mm H.
-- Complete robot mass target: 4–6 kg including battery and all installed parts.
-- Maximum design ceiling: 10 kg, not the target.
-- Initial payload target: 1–2 kg, additional to robot mass and not yet validated.
+- Preferred complete robot mass: 5 kg; design range 4–6 kg, including battery and all installed parts.
+- Hard complete-robot design ceiling: 6 kg; do not use this as a reason to add unnecessary mass.
+- Initial payload target: 1 kg, additional to robot mass; 2 kg is a stretch target requiring separate validation.
 - First engineering objective: low-speed, human-supervised indoor mobile platform.
 - Candidate drive architecture for evaluation: two powered wheels with encoders plus two passive support wheels. This is a cost/weight-saving concept only; it is not yet selected.
 

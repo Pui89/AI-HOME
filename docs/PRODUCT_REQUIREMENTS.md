@@ -42,9 +42,9 @@ Only modalities supported by an identified, lawful, tested sensor or dataset may
 ## 5. Physical design targets
 
 - Mobility concept: four wheels, indoor use, supervised movement.
-- Complete robot mass: **4–6 kg target**, including battery and all installed parts; **10 kg is the maximum design ceiling**, not the target build mass.
+- Complete robot mass: **5 kg preferred target**, within a **4–6 kg design range**; **6 kg is the hard complete-robot ceiling**, including battery and all installed parts.
 - External dimensions: **25–28 cm W × 30–33 cm D × 30–35 cm H** as a provisional complete assembled envelope including wheels and fixed sensor housing; not measured.
-- Initial payload target: **1–2 kg**, separate from robot mass and subject to stability, drive and stopping validation.
+- Initial payload target: **1 kg**, separate from robot mass; **2 kg is a stretch target** requiring separate stability, drive and stopping validation.
 - Centre of gravity, turning radius, speed, stopping distance, threshold-crossing ability, floor loading, runtime and charging time: **TBD**. Do not publish invented values.
 - Use the [preliminary internal layout and mass-budget plan](AI_HOME_INTERNAL_LAYOUT_AND_MASS_BUDGET.md) for planning only; allocations are not measured component masses or selected hardware.
 - Protection against water ingress, heat and fire: define from a documented hazard analysis and verified component/material ratings. Do not describe the robot as waterproof or fireproof without applicable test evidence.

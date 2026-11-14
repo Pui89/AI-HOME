@@ -1,18 +1,18 @@
-# PUI89 AI HOME — Compact Layout and 4–6 kg Target Mass Plan
+# PUI89 AI HOME — Compact Layout and 5 kg Preferred Target Mass Plan
 
 **Status:** Preliminary design study only. No components are selected, purchased, assembled, weighed or validated.  
 **Revised design envelope:** 25–28 cm wide × 30–33 cm deep × 30–35 cm high, including wheels and fixed external features.  
-**Complete robot mass target:** 4–6 kg, including battery and all installed parts.  
-**Maximum design ceiling:** 10 kg; this is not the desired build mass.  
-**Initial payload target:** 1–2 kg, additional to robot mass and subject to validation.  
+**Preferred complete robot mass:** 5 kg, including battery and all installed parts.  
+**Complete-robot design range and ceiling:** 4–6 kg; 6 kg is the hard upper design limit, not a target to exceed.  
+**Initial payload target:** 1 kg, additional to robot mass. A 2 kg payload is a stretch target requiring separate validation.  
 **Use:** Indoor residential concept; supervised movement only if a mobility prototype is later developed.
 
 ## 1. Design rules
 
-1. Design toward a complete robot mass of 4–6 kg; do not treat the 10 kg maximum design ceiling as the target.
+1. Design toward a preferred complete robot mass of 5 kg; remain within the 4–6 kg design range and never exceed the 6 kg complete-robot ceiling.
 2. The complete robot mass includes chassis, enclosure, wheels, motors, battery/BMS, computer, sensors, wiring, connectors, fasteners, guards and all installed accessories.
 3. Payload is separate from robot mass and must be included in stability, wheel-load, torque, braking and runtime calculations.
-4. No component mass, supplier, price, certification, runtime, speed, payload capability or protection rating is approved by this document.
+4. The initial loaded-mass engineering case is up to 6 kg (5 kg preferred robot plus 1 kg payload); the 2 kg stretch-payload case is up to 7 kg at the 5 kg preferred robot mass. These are calculation cases, not validated capabilities.
 5. Do not invent subsystem mass allocations before candidate components and mechanical architecture are selected. Record each candidate's datasheet mass and later measure the physical part.
 6. Keep heavy components low and near the centreline. Avoid top-heavy sensor towers and unnecessary displays, duplicate controllers, oversized motors or decorative structure.
 7. Certified household smoke/fire/CO/electrical protection remains primary. AI HOME must not control locks, breakers, valves, appliances or certified alarms.
@@ -51,7 +51,7 @@ No unsupported per-subsystem allocations are assigned at this stage. Populate th
 | Power conversion, fuses and protection | TBD | TBD | TBD | TBD | TBD | Pending |
 | Wiring, connectors and strain relief | TBD | TBD | TBD | TBD | TBD | Pending |
 | Guards, fasteners and service parts | TBD | TBD | TBD | TBD | TBD | Pending |
-| **Complete robot mass** |  |  | **TBD** | **TBD** | **TBD** | Must target 4–6 kg; must not exceed 10 kg ceiling |
+| **Complete robot mass** |  |  | **TBD** | **TBD** | **TBD** | Prefer 5 kg; remain within 4–6 kg and never exceed 6 kg |
 
 Do not declare the target achieved from estimates alone. Report the measured assembled mass, scale resolution, configuration, battery state and included accessories.
 
@@ -73,11 +73,11 @@ No purchases, supplier contact, account creation, trials, package installations 
 ## 5. Engineering gates before design freeze
 
 - [ ] CAD proves the complete external envelope is within 280 × 330 × 350 mm.
-- [ ] Component-level mass ledger targets 4–6 kg and the complete robot remains at or below 10 kg.
+- [ ] Component-level mass ledger targets 5 kg preferred and proves the complete robot remains at or below 6 kg.
 - [ ] Physical weighing confirms the assembled mass; estimates are not reported as measurements.
 - [ ] Centre-of-gravity and tip-resistance analysis covers turns, slopes and emergency stops.
 - [ ] Drive torque, speed, wheel loading, stopping distance and floor-transition limits are calculated.
-- [ ] The 1–2 kg initial payload target is validated separately from robot mass.
+- [ ] The 1 kg initial payload is validated separately; the 2 kg stretch target is treated as a separate test case.
 - [ ] Battery energy, peak/continuous current, BMS, charging and thermal limits are documented.
 - [ ] Electrical protection, fuse sizing, connector ratings and wiring diagram are reviewed.
 - [ ] Sensor placement, coverage, blind spots, calibration and environmental limits are documented.
@@ -87,7 +87,7 @@ No purchases, supplier contact, account creation, trials, package installations 
 
 ## 6. Explicit limitations
 
-This document does not establish that the proposed compact envelope, 4–6 kg target or 1–2 kg payload is mechanically feasible. It does not establish a prototype, selected components, real sensor integration, runtime, navigation performance, waterproofing, fire resistance, IP rating, certified alarm function or safety certification. Stair climbing and outdoor terrain operation are out of scope. Unknown values remain TBD.
+This document does not establish that the proposed compact envelope, 5 kg preferred mass target, 6 kg ceiling or 1 kg initial / 2 kg stretch payload is mechanically feasible. It does not establish a prototype, selected components, real sensor integration, runtime, navigation performance, waterproofing, fire resistance, IP rating, certified alarm function or safety certification. Stair climbing and outdoor terrain operation are out of scope. Unknown values remain TBD.
 
 ## 7. Review record
 
